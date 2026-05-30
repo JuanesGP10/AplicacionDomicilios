@@ -1,0 +1,14 @@
+C:\Users\WIN\source\repos\SolutionProyectoFinal\lib_domicilios_negocio\bin\Debug\net9.0\lib_domicilios_negocio.deps.json
+C:\Users\WIN\source\repos\SolutionProyectoFinal\lib_domicilios_negocio\bin\Debug\net9.0\lib_domicilios_negocio.runtimeconfig.json
+C:\Users\WIN\source\repos\SolutionProyectoFinal\lib_domicilios_negocio\bin\Debug\net9.0\lib_domicilios_negocio.dll
+C:\Users\WIN\source\repos\SolutionProyectoFinal\lib_domicilios_negocio\bin\Debug\net9.0\lib_domicilios_negocio.pdb
+C:\Users\WIN\source\repos\SolutionProyectoFinal\lib_domicilios_negocio\obj\Debug\net9.0\lib_domicilios_negocio.csproj.AssemblyReference.cache
+C:\Users\WIN\source\repos\SolutionProyectoFinal\lib_domicilios_negocio\obj\Debug\net9.0\lib_domicilios_negocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WIN\source\repos\SolutionProyectoFinal\lib_domicilios_negocio\obj\Debug\net9.0\lib_domicilios_negocio.AssemblyInfoInputs.cache
+C:\Users\WIN\source\repos\SolutionProyectoFinal\lib_domicilios_negocio\obj\Debug\net9.0\lib_domicilios_negocio.AssemblyInfo.cs
+C:\Users\WIN\source\repos\SolutionProyectoFinal\lib_domicilios_negocio\obj\Debug\net9.0\lib_domicilios_negocio.csproj.CoreCompileInputs.cache
+C:\Users\WIN\source\repos\SolutionProyectoFinal\lib_domicilios_negocio\obj\Debug\net9.0\lib_domicilios_negocio.dll
+C:\Users\WIN\source\repos\SolutionProyectoFinal\lib_domicilios_negocio\obj\Debug\net9.0\refint\lib_domicilios_negocio.dll
+C:\Users\WIN\source\repos\SolutionProyectoFinal\lib_domicilios_negocio\obj\Debug\net9.0\lib_domicilios_negocio.pdb
+C:\Users\WIN\source\repos\SolutionProyectoFinal\lib_domicilios_negocio\obj\Debug\net9.0\lib_domicilios_negocio.genruntimeconfig.cache
+C:\Users\WIN\source\repos\SolutionProyectoFinal\lib_domicilios_negocio\obj\Debug\net9.0\ref\lib_domicilios_negocio.dll
