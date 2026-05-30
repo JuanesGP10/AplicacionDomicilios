@@ -9,137 +9,137 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = asp_domicilios_presentacion
 build_property.RootNamespace = asp_domicilios_presentacion
-build_property.ProjectDir = C:\Users\WIN\source\repos\SolutionProyectoFinal\asp_domicilios_presentacion\
+build_property.ProjectDir = C:\Users\WIN\Desktop\AplicacionDomicilios\asp_domicilios_presentacion\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\WIN\source\repos\SolutionProyectoFinal\asp_domicilios_presentacion
+build_property.MSBuildProjectDirectory = C:\Users\WIN\Desktop\AplicacionDomicilios\asp_domicilios_presentacion
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Emergentes/Mensajes.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Emergentes/Mensajes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1lcmdlbnRlc1xNZW5zYWplcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Error.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Index.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Privacy.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/Calificaciones.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/Calificaciones.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcQ2FsaWZpY2FjaW9uZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/Categorias.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/Categorias.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcQ2F0ZWdvcmlhcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/Clientes.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/Clientes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcQ2xpZW50ZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/DetallePedido.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/DetallePedido.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcRGV0YWxsZVBlZGlkby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/EstadoPago.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/EstadoPago.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcRXN0YWRvUGFnby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/EstadoPedido.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/EstadoPedido.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcRXN0YWRvUGVkaWRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/Facturas.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/Facturas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcRmFjdHVyYXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/FacturasImpresion.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/FacturasImpresion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcRmFjdHVyYXNJbXByZXNpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/Historicos.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/Historicos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcSGlzdG9yaWNvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/MetodoPago.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/MetodoPago.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcTWV0b2RvUGFnby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/Notificaciones.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/Notificaciones.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcTm90aWZpY2FjaW9uZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/Pagos.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/Pagos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcUGFnb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/Pedidos.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/Pedidos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcUGVkaWRvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/Perfil.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/Perfil.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcUGVyZmlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/Productos.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/Productos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcUHJvZHVjdG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/RastreoPedido.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/RastreoPedido.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcUmFzdHJlb1BlZGlkby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/RastreoRepartidor.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/RastreoRepartidor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcUmFzdHJlb1JlcGFydGlkb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/Repartidores.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/Repartidores.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcUmVwYXJ0aWRvcmVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/Roles.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/Roles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcUm9sZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/RutaEntrega.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/RutaEntrega.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcUnV0YUVudHJlZ2EuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/Usuarios.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/Usuarios.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcVXN1YXJpb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/Vehiculos.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/Vehiculos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcVmVoaWN1bG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Ventanas/Zonas.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Ventanas/Zonas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFuYXNcWm9uYXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/_ViewImports.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/_ViewStart.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WIN/source/repos/SolutionProyectoFinal/asp_domicilios_presentacion/Pages/Shared/_Layout.cshtml]
+[C:/Users/WIN/Desktop/AplicacionDomicilios/asp_domicilios_presentacion/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-gvl36q6s49
