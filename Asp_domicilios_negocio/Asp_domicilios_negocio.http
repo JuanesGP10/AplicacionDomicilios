@@ -1,0 +1,6 @@
+@Asp_domicilios_negocio_HostAddress = http://localhost:5129
+
+GET {{Asp_domicilios_negocio_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
