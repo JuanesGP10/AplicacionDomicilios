@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "asp_domicilios_presentacion\\asp_domicilios_presentacion.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Asp_domicilios_negocio\\Asp_domicilios_negocio.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
