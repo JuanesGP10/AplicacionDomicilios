@@ -1,0 +1,49 @@
+﻿@page
+@model asp_domicilios_presentacion.Pages.Ventanas.RolesModel
+@{
+    ViewData["Title"] = "Roles";
+    int rolUsuario = HttpContext.Session.GetInt32("Rol") ?? 0;
+}
+
+<div class="container mt-4">
+    <h2>Roles del Sistema</h2>
+    <hr />
+    @if (ViewData["Mensaje"] != null)
+    {
+        <div class="alert alert-danger">@ViewData["Mensaje"]</div>
+    }
+    <form method="post">
+        <div class="mb-3">
+            <button type="submit" asp-page-handler="BtRefrescar" class="btn btn-secondary">Refrescar</button>
+        </div>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Lista != null && Model.Lista.Count > 0)
+                {
+                    foreach (var item in Model.Lista)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Nombre</td>
+                            <td>@item.Descripcion</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="3" class="text-center">No hay registros de roles.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </form>
+</div>

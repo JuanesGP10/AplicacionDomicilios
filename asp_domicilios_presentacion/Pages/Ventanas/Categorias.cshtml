@@ -1,0 +1,158 @@
+﻿@page
+@model asp_domicilios_presentacion.Pages.Ventanas.CategoriasModel
+@{
+    ViewData["Title"] = "Gestión de Categorías";
+}
+
+<div class="container mt-4">
+    @if (ViewData["Mensaje"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <i class="bi bi-exclamation-circle-fill"></i> @ViewData["Mensaje"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (ViewData["Exito"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle-fill"></i> @ViewData["Exito"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+        <h2><i class="bi bi-tags-fill text-primary"></i> Control de Categorías</h2>
+
+        @if (Model.CategoriaNueva == null && HttpContext.Session.GetInt32("Rol") == 1)
+        {
+            <form method="post">
+                <button type="submit" asp-page-handler="BtNuevo" class="btn btn-primary fw-bold">
+                    <i class="bi bi-plus-circle"></i> Nueva Categoría
+                </button>
+            </form>
+        }
+    </div>
+
+    <div class="row">
+        @if (Model.CategoriaNueva != null)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-@(Model.Borrando ? "danger" : (Model.CategoriaNueva.Id == 0 ? "success" : "warning"))">
+                    <div class="card-header bg-@(Model.Borrando ? "danger text-white" : (Model.CategoriaNueva.Id == 0 ? "success text-white" : "warning text-dark")) py-3">
+                        <h5 class="mb-0">
+                            <i class="bi bi-folder"></i>
+                            @(Model.Borrando ? "Eliminar Categoría" : (Model.CategoriaNueva.Id == 0 ? "Registrar Categoría" : "Modificar Categoría"))
+                        </h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <form method="post">
+                            <input type="hidden" asp-for="CategoriaNueva.Id" />
+                            <input type="hidden" asp-for="CategoriaNueva.Creacion" />
+                            <input type="hidden" asp-for="CategoriaNueva.Activo" />
+                            <input type="hidden" asp-for="Borrando" />
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Nombre de la Categoría</label>
+                                <input type="text" asp-for="CategoriaNueva.Nombre" class="form-control" readonly="@Model.Borrando" placeholder="Ej: Bebidas, Postres..." required />
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Descripción / Notas</label>
+                                <textarea asp-for="CategoriaNueva.Descripcion" class="form-control" rows="3" readonly="@Model.Borrando" placeholder="Breve resumen de los productos..."></textarea>
+                            </div>
+
+                            <div class="text-end border-top pt-3">
+                                <button type="submit" asp-page-handler="BtCerrar" class="btn btn-secondary" formnovalidate>Cancelar</button>
+
+                                @if (Model.Borrando)
+                                {
+                                    <button type="submit" asp-page-handler="BtBorrar" class="btn btn-danger fw-bold">Confirmar Borrado</button>
+                                }
+                                else if (Model.CategoriaNueva.Id == 0)
+                                {
+                                    <button type="submit" asp-page-handler="BtGuardar" class="btn btn-success fw-bold">Guardar</button>
+                                }
+                                else
+                                {
+                                    <button type="submit" asp-page-handler="BtModificar" class="btn btn-warning fw-bold text-dark">Modificar</button>
+                                }
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <div class="@(Model.CategoriaNueva != null ? "col-md-8" : "col-md-12")">
+            <div class="card shadow-sm">
+                <div class="card-header bg-dark text-white py-3 d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0"><i class="bi bi-table"></i> Categorías del Sistema</h5>
+                    <form method="post" class="m-0">
+                        <button type="submit" asp-page-handler="BtRefrescar" class="btn btn-sm btn-outline-light" formnovalidate>
+                            <i class="bi bi-arrow-clockwise"></i> Refrescar
+                        </button>
+                    </form>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover table-striped mb-0 align-middle">
+                            <thead class="table-secondary">
+                                <tr>
+                                    <th style="width: 10%;">ID</th>
+                                    <th style="width: 30%;">Nombre</th>
+                                    <th style="width: 40%;">Descripción</th>
+                                    
+                                    @if (HttpContext.Session.GetInt32("Rol") == 1)
+                                    {
+                                        <th style="width: 20%;" class="text-center">Acciones</th>
+                                    }
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model.ListaCategorias != null && Model.ListaCategorias.Any())
+                                {
+                                    foreach (var item in Model.ListaCategorias)
+                                    {
+                                        <tr class="@(Model.CategoriaNueva?.Id == item.Id ? "table-warning fw-bold" : "")">
+                                            <td>@item.Id</td>
+                                            <td>@item.Nombre</td>
+                                            <td class="text-muted text-truncate" style="max-width: 250px;">@item.Descripcion</td>
+
+                                            @* CANDADO FRONT: Solo dibuja los botones de Editar/Borrar en la fila si es Admin *@
+                                            @if (HttpContext.Session.GetInt32("Rol") == 1)
+                                            {
+                                                <td class="text-center">
+                                                    <div class="btn-group">
+                                                        <form method="post" class="d-inline me-1">
+                                                            <button type="submit" asp-page-handler="BtEditar" asp-route-id="@item.Id" class="btn btn-sm btn-outline-warning">
+                                                                <i class="bi bi-pencil"></i> Editar
+                                                            </button>
+                                                        </form>
+
+                                                        <form method="post" class="d-inline">
+                                                            <button type="submit" asp-page-handler="BtBorrarVal" asp-route-data="@item.Id" class="btn btn-sm btn-outline-danger">
+                                                                <i class="bi bi-trash"></i> Borrar
+                                                            </button>
+                                                        </form>
+                                                    </div>
+                                                </td>
+                                            }
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="4" class="text-center py-4 text-muted">
+                                            No hay categorías configuradas.
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,80 @@
+﻿@page
+@model asp_domicilios_presentacion.Pages.Ventanas.NotificacionesModel
+@{
+    ViewData["Title"] = "Notificaciones";
+    int rolUsuario = Model.ObtenerRolUsuario();
+}
+
+<div class="py-5">
+    <div class="container" style="max-width: 800px;">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2><i class="bi bi-bell-fill me-2 text-warning"></i> Centro de Notificaciones</h2>
+            <form method="post">
+                <button type="submit" asp-page-handler="BtRefrescar" class="btn btn-outline-warning text-white border-white">
+                    <i class="bi bi-arrow-clockwise"></i> Actualizar
+                </button>
+            </form>
+        </div>
+
+        @if (Model.ListaNotificaciones != null)
+        {
+            if (Model.ListaNotificaciones.Count > 0)
+            {
+                foreach (var item in Model.ListaNotificaciones)
+                {
+                    // Determinar estilos visuales basados en si la notificación ya fue leída
+                    string claseBorde = item.Leida ? "border-start border-secondary opacity-75" : "border-start border-4 border-warning shadow";
+                    string fondoCard = item.Leida ? "bg-light text-muted" : "bg-white text-dark";
+                    string iconoCampana = item.Leida ? "bi-bell text-secondary" : "bi-bell-fill text-danger";
+
+                    <div class="card mb-3 @claseBorde @fondoCard border-0">
+                        <div class="card-body d-flex align-items-center justify-content-between p-3">
+                            <div class="d-flex align-items-center me-3">
+                                <div class="fs-3 me-3">
+                                    <i class="bi @iconoCampana"></i>
+                                </div>
+                                <div>
+                                    <p class="mb-1 fs-5 @(item.Leida ? "" : "fw-bold")">@item.Mensaje</p>
+                                    <small class="text-secondary d-block">
+                                        <i class="bi bi-clock me-1"></i> @item.FechaEnvio.ToString("dd/MM/yyyy hh:mm tt")
+                                    </small>
+                                    @if (rolUsuario == 1)
+                                    {
+                                        <span class="badge bg-dark mt-1">Para Usuario ID: @item.UsuarioId</span>
+                                    }
+                                </div>
+                            </div>
+
+                            <div class="text-end d-flex gap-2">
+                                @if (!item.Leida)
+                                {
+                                    <form method="post" asp-page-handler="BtMarcarLeida" asp-route-id="@item.Id" class="d-inline">
+                                        <button type="submit" class="btn btn-sm btn-outline-success border-0" title="Marcar como leída">
+                                            <i class="bi bi-check-circle-fill fs-4"></i>
+                                        </button>
+                                    </form>
+                                }
+                                <form method="post" asp-page-handler="BtEliminar" asp-route-id="@item.Id" class="d-inline">
+                                    <button type="submit" class="btn btn-sm btn-outline-danger border-0" title="Eliminar notificación">
+                                        <i class="bi bi-x-circle-fill fs-4"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="card shadow border-0 rounded-3 text-center py-5">
+                    <div class="card-body text-dark">
+                        <i class="bi bi-bell-slash text-muted display-4 d-block mb-3"></i>
+                        <h4 class="text-secondary">Bandeja de entrada limpia</h4>
+                        <p class="text-muted mb-0">No tienes alertas pendientes de revisión en este momento.</p>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

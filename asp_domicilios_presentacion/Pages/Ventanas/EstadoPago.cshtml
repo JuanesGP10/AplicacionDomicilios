@@ -1,0 +1,166 @@
+﻿@page
+@model asp_domicilios_presentacion.Pages.Ventanas.EstadoPagoModel
+@{
+    ViewData["Title"] = "Gestión de Estados de Pago";
+    int rolUsuario = Model.ObtenerRolUsuario();
+}
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2><i class="bi bi-sliders me-2"></i> Estados de Pago</h2>
+        <form method="post">
+            <button type="submit" asp-page-handler="BtRefrescar" class="btn btn-outline-secondary me-2">
+                <i class="bi bi-arrow-clockwise"></i> Actualizar
+            </button>
+            @if (rolUsuario == 1 && Model.EstadoPagoNuevo == null && !Model.Borrando)
+            {
+                <button type="submit" asp-page-handler="BtNuevo" class="btn btn-primary">
+                    <i class="bi bi-plus-circle me-1"></i> Nuevo Estado
+                </button>
+            }
+        </form>
+    </div>
+
+    <!-- Mensajes del Servidor -->
+    @if (ViewData["Mensaje"] != null)
+    {
+        <div class="alert alert-warning alert-dismissible fade show shadow-sm" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i> @ViewData["Mensaje"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <!-- 1. CONFIRMACIÓN DE ELIMINACIÓN (Si Borrando == true) -->
+    @if (Model.Borrando && Model.EstadoPagoNuevo != null)
+    {
+        <div class="card border-danger shadow mb-4">
+            <div class="card-header bg-danger text-white">
+                <h5 class="mb-0"><i class="bi bi-trash me-2"></i> ¿Confirmar eliminación del estado?</h5>
+            </div>
+            <div class="card-body">
+                <p class="fs-5">¿Está seguro de que desea eliminar el estado de pago: <strong>@Model.EstadoPagoNuevo.Nombre</strong>?</p>
+                <form method="post">
+                    <input type="hidden" asp-for="EstadoPagoNuevo.Id" />
+
+                    <button type="submit" asp-page-handler="BtBorrar" class="btn btn-danger btn-lg me-2">
+                        <i class="bi bi-trash-fill"></i> Eliminar
+                    </button>
+                    <button type="submit" asp-page-handler="BtCerrar" class="btn btn-outline-secondary btn-lg">
+                        Cancelar
+                    </button>
+                </form>
+            </div>
+        </div>
+    }
+
+    <!-- 2. FORMULARIO DE REGISTRO O EDICIÓN -->
+    @if (Model.EstadoPagoNuevo != null && !Model.Borrando)
+    {
+        <div class="card shadow-sm border-0 rounded-3 mb-5">
+            <div class="card-header bg-dark text-white py-3">
+                <h5 class="mb-0">
+                    <i class="bi bi-pencil-square me-2"></i>
+                    @(Model.EstadoPagoNuevo.Id == 0 ? "Registrar Nuevo Estado" : $"Modificar Estado: {Model.EstadoPagoNuevo.Nombre}")
+                </h5>
+            </div>
+            <div class="card-body p-4">
+                <form method="post" asp-page-handler="BtGuardar">
+                    <input type="hidden" asp-for="EstadoPagoNuevo.Id" />
+
+                    <div class="row align-items-center">
+                        <!-- Nombre del Estado -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label fw-semibold text-secondary">Nombre del Estado</label>
+                            <input type="text" class="form-control" asp-for="EstadoPagoNuevo.Nombre" required placeholder="Ej: Aprobado, Pendiente, Rechazado" />
+                        </div>
+
+                        <div class="col-md-6 mb-3 d-flex align-items-end">
+                            <div class="form-check form-switch mb-2">
+                                <input class="form-check-input" type="checkbox" role="switch" asp-for="EstadoPagoNuevo.Activo" id="estadoActivoCheck">
+                                <label class="form-check-label fw-semibold text-secondary" for="estadoActivoCheck">Estado Disponible / Activo</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-end gap-2 mt-3">
+                        <button type="submit" class="btn btn-success px-4">
+                            <i class="bi bi-save me-1"></i> Guardar Registro
+                        </button>
+                        <button type="submit" asp-page-handler="BtCerrar" class="btn btn-outline-secondary px-4">
+                            Volver a la Lista
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    }
+
+    <!-- 3. TABLA GENERAL DE REGISTROS -->
+    @if (Model.Lista != null)
+    {
+        <div class="card shadow-sm border-0 rounded-3">
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-light text-secondary text-uppercase small font-weight-bold">
+                            <tr>
+                                <th class="ps-4" style="width: 15%;">ID</th>
+                                <th style="width: 55%;">Nombre del Estado</th>
+                                <th style="width: 15%;">Disponibilidad</th>
+                                @if (rolUsuario == 1)
+                                {
+                                    <th class="text-center" style="width: 15%;">Acciones</th>
+                                }
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model.Lista.Count > 0)
+                            {
+                                foreach (var item in Model.Lista)
+                                {
+                                    <tr>
+                                        <td class="ps-4 fw-bold">#@item.Id</td>
+                                        <td>
+                                            <span class="fw-semibold text-dark fs-6">@item.Nombre</span>
+                                        </td>
+                                        <td>
+                                            @if (item.Activo)
+                                            {
+                                                <span class="badge bg-success-subtle text-success p-2 rounded-pill"><i class="bi bi-check2-circle me-1"></i>Activo</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge bg-danger-subtle text-danger p-2 rounded-pill"><i class="bi bi-x-circle me-1"></i>Inactivo</span>
+                                            }
+                                        </td>
+                                        @if (rolUsuario == 1)
+                                        {
+                                            <td class="text-center pe-3">
+                                                <form method="post" class="d-inline">
+                                                    <button type="submit" asp-page-handler="BtModificar" asp-route-data="@item.Id" class="btn btn-sm btn-outline-primary me-1" title="Editar Estado">
+                                                        <i class="bi bi-pencil"></i>
+                                                    </button>
+                                                    <button type="submit" asp-page-handler="BtBorrarVal" asp-route-data="@item.Id" class="btn btn-sm btn-outline-danger" title="Eliminar Estado">
+                                                        <i class="bi bi-trash"></i>
+                                                    </button>
+                                                </form>
+                                            </td>
+                                        }
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="4" class="text-center py-5 text-muted">
+                                        <i class="bi bi-folder-x fs-2 d-block mb-2"></i> No hay estados de pago registrados en la base de datos.
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+</div>

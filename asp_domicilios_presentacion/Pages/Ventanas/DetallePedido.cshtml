@@ -1,0 +1,130 @@
+﻿@page
+@model asp_domicilios_presentacion.Pages.Ventanas.DetallePedidoModel
+@{
+    ViewData["Title"] = "Detalle del Pedido";
+}
+
+<div class="container mt-4">
+    <h2>Ítems y Detalles de Pedidos</h2>
+    <hr />
+
+    @if (ViewData["Mensaje"] != null)
+    {
+        <div class="alert alert-info">@ViewData["Mensaje"]</div>
+    }
+
+    @* VISTA 1: LISTADO DE DETALLES *@
+    @if (Model.Lista != null)
+    {
+        <form method="post">
+            <div class="mb-3">
+                @if (Model.ObtenerRolUsuario() == 1)
+                {
+                    <button type="submit" asp-page-handler="BtNuevo" class="btn btn-primary">Agregar Ítem</button>
+                }
+                <button type="submit" asp-page-handler="BtRefrescar" class="btn btn-secondary">Refrescar</button>
+            </div>
+
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>ID Detalle</th>
+                        <th>ID Pedido</th>
+                        <th>ID Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio Unitario</th>
+                        @if (Model.ObtenerRolUsuario() == 1)
+                        {
+                            <th>Acciones</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.Lista.Count > 0)
+                    {
+                        foreach (var item in Model.Lista)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.PedidoId</td>
+                                <td>@item.ProductoId</td>
+                                <td>@item.Cantidad</td>
+                                <td>@item.PrecioUnitario</td>
+                                @if (Model.ObtenerRolUsuario() == 1)
+                                {
+                                    <td>
+                                        <button type="submit" asp-page-handler="BtModificar" asp-route-data="@item.Id" class="btn btn-sm btn-warning">Modificar</button>
+                                        <button type="submit" asp-page-handler="BtBorrarVal" asp-route-data="@item.Id" class="btn btn-sm btn-danger">Borrar</button>
+                                    </td>
+                                }
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="@(Model.ObtenerRolUsuario() == 1 ? 6 : 5)" class="text-center">
+                                No hay componentes registrados en este detalle.
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </form>
+    }
+
+    @* VISTA 2: FORMULARIO DE EDICIÓN / ADICIÓN (Solo Admin) *@
+    @if (Model.Detalle != null && !Model.Borrando && Model.ObtenerRolUsuario() == 1)
+    {
+        <div class="card p-4">
+            <h4>Formulario de Ítem de Pedido</h4>
+            <form method="post">
+                @Html.HiddenFor(x => x.Detalle!.Id)
+
+                <div class="mb-3">
+                    <label class="form-label">Código del Pedido (PedidoId)</label>
+                    @Html.TextBoxFor(x => x.Detalle!.PedidoId, new { @class = "form-control", @type = "number", required = "required" })
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Código del Producto (ProductoId)</label>
+                    @Html.TextBoxFor(x => x.Detalle!.ProductoId, new { @class = "form-control", @type = "number", required = "required" })
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Cantidad</label>
+                    @Html.TextBoxFor(x => x.Detalle!.Cantidad, new { @class = "form-control", @type = "number", required = "required" })
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Precio Unitario ($)</label>
+                    @Html.TextBoxFor(x => x.Detalle!.PrecioUnitario, new { @class = "form-control", @type = "number", @step = "0.01", required = "required" })
+                </div>
+
+                <div>
+                    <button type="submit" asp-page-handler="BtGuardar" class="btn btn-success">Guardar</button>
+                    <button type="submit" asp-page-handler="BtCerrar" class="btn btn-secondary" formnovalidate>Cancelar</button>
+                </div>
+            </form>
+        </div>
+    }
+
+    @* VISTA 3: ELIMINACIÓN DEL ÍTEM (Solo Admin) *@
+    @if (Model.Detalle != null && Model.Borrando && Model.ObtenerRolUsuario() == 1)
+    {
+        <div class="card border-danger p-4">
+            <h4 class="text-danger">¿Deseas remover este ítem del pedido?</h4>
+            <p><strong>ID Detalle:</strong> @Model.Detalle.Id</p>
+            <p><strong>Pedido Origen:</strong> @Model.Detalle.PedidoId</p>
+            <p><strong>Cantidad a remover:</strong> @Model.Detalle.Cantidad</p>
+
+            <form method="post">
+                @Html.HiddenFor(x => x.Detalle!.Id)
+                <div>
+                    <button type="submit" asp-page-handler="BtBorrar" class="btn btn-danger">Confirmar Eliminar</button>
+                    <button type="submit" asp-page-handler="BtCerrar" class="btn btn-secondary">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    }
+</div>

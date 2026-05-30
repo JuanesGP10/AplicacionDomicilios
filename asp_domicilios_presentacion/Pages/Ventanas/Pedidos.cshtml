@@ -1,0 +1,280 @@
+﻿@page
+@model asp_domicilios_presentacion.Pages.Ventanas.PedidosModel
+@{
+    ViewData["Title"] = "Gestión de Pedidos";
+}
+
+<div class="container mt-4">
+    @if (ViewData["Mensaje"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <i class="bi bi-exclamation-circle-fill"></i> @ViewData["Mensaje"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+    @if (ViewData["Exito"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle-fill"></i> @ViewData["Exito"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+        <h2>
+            <i class="bi bi-bag-check-fill text-primary"></i>
+            @(Model.PedidoNuevo?.Id > 0 ? $"Modificando Pedido #{Model.PedidoNuevo.Id}" : "Pedidos")
+        </h2>
+        @if (Model.PedidoNuevo == null)
+        {
+            @if (Model.ObtenerRolUsuario() == 2)
+            {
+                <form method="post">
+                    <button type="submit" asp-page-handler="BtNuevo" class="btn btn-primary fw-bold">
+                    <i class="bi bi-plus-circle"></i> Iniciar Nuevo Pedido
+                </button>
+                </form>
+            }
+        }
+    </div>
+
+    <div class="row">
+        @if (Model.PedidoNuevo != null)
+        {
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm border-primary">
+                    <div class="card-header bg-primary text-white py-3">
+                        <h5 class="mb-0"><i class="bi bi-receipt-cutoff"></i> Formulario de Pedido</h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <form method="post">
+                            <input type="hidden" asp-for="PedidoNuevo.Id" />
+                            <input type="hidden" asp-for="PedidoNuevo.RepartidorId" />
+                            <input type="hidden" asp-for="PedidoNuevo.FechaCreacion" />
+                            <input type="hidden" asp-for="PedidoNuevo.Total" />
+                            <input type="hidden" asp-for="Borrando" />
+
+                            @if (Model.ObtenerRolUsuario() != 1)
+                            {
+                                <input type="hidden" asp-for="PedidoNuevo.ClienteId" />
+                                <input type="hidden" asp-for="PedidoNuevo.EstadoPedidoId" />
+                                <div class="alert alert-info py-2 mb-4 small" role="alert">
+                                    <i class="bi bi-info-circle-fill"></i> El pedido se enviará a la **dirección registrada en tu perfil**.
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="row g-2 mb-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label small fw-bold">Modificar Estado</label>
+                                        <select asp-for="PedidoNuevo.EstadoPedidoId" class="form-select border-primary fw-bold text-primary">
+                                            @if (Model.ListaEstadosPedido != null)
+                                            {
+                                                foreach (var est in Model.ListaEstadosPedido)
+                                                {
+                                                    <option value="@est.Id">@est.Nombre</option>
+                                                }
+                                            }
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small fw-bold">ID Cliente</label>
+                                        <input type="number" asp-for="PedidoNuevo.ClienteId" class="form-control" required />
+                                    </div>
+                                </div>
+                            }
+
+                            <h6 class="text-secondary fw-bold mb-2"><i class="bi bi-cart-plus"></i> Gestionar Productos</h6>
+                            <div class="row g-2 align-items-end mb-4 bg-light p-3 rounded border">
+                                <div class="col-md-7">
+                                    <label class="form-label small fw-bold">Producto</label>
+                                    <select asp-for="IdProductoElegido" class="form-select">
+                                        <option value="0">-- Elegir Artículo --</option>
+                                        @if (Model.ListaProductos != null)
+                                        {
+                                            foreach (var prod in Model.ListaProductos)
+                                            {
+                                                <option value="@prod.Id">@prod.Nombre ($@prod.Precio.ToString("N0"))</option>
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="form-label small fw-bold">Cant.</label>
+                                    <input type="number" asp-for="CantidadElegida" class="form-control" min="1" />
+                                </div>
+                                <div class="col-md-3">
+                                    <button type="submit" asp-page-handler="BtAgregarItem" class="btn btn-dark w-100 fw-bold" formnovalidate>
+                                        Añadir
+                                    </button>
+                                </div>
+                            </div>
+
+                            <h6 class="fw-bold mb-2">Artículos en el Carrito</h6>
+                            <div class="table-responsive mb-4" style="max-height: 250px; overflow-y: auto;">
+                                <table class="table table-sm table-striped table-bordered align-middle mb-0">
+                                    <thead class="table-dark small">
+                                        <tr>
+                                            <th class="text-center">Producto</th>
+                                            <th class="text-center">Cantidad</th>
+                                            <th class="text-center" style="width: 10%;">Quitar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @if (Model.PedidoNuevo.DetallePedido != null && Model.PedidoNuevo.DetallePedido.Count > 0)
+                                        {
+                                            for (int i = 0; i < Model.PedidoNuevo.DetallePedido.Count; i++)
+                                            {
+                                                var productoInfo = Model.ListaProductos?.FirstOrDefault(x => x.Id == Model.PedidoNuevo.DetallePedido[i].ProductoId);
+                                                string nombreProducto = productoInfo != null ? productoInfo.Nombre : $"Código: {Model.PedidoNuevo.DetallePedido[i].ProductoId}";
+
+                                                <tr>
+                                                    <td>
+                                                        <input type="hidden" asp-for="PedidoNuevo.DetallePedido[i].ProductoId" />
+                                                        <span class="fw-bold text-dark">@nombreProducto</span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <input type="hidden" asp-for="PedidoNuevo.DetallePedido[i].Cantidad" />
+                                                        <span class="badge bg-secondary px-3 py-2">@Model.PedidoNuevo.DetallePedido[i].Cantidad</span>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <button type="submit" asp-page-handler="BtQuitarItem" asp-route-index="@i" class="btn btn-sm btn-outline-danger py-0 px-2" formnovalidate>
+                                                            X
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td colspan="3" class="text-center text-muted small py-3">No hay productos en la orden.</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="text-end border-top pt-3">
+                                <button type="submit" asp-page-handler="BtCerrar" class="btn btn-secondary" formnovalidate>Cancelar</button>
+                                <button type="submit" asp-page-handler="BtGuardar" class="btn btn-success fw-bold">
+                                    @(Model.PedidoNuevo.Id > 0 ? "Guardar Cambios" : "Procesar Pedido")
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <div class="@(Model.PedidoNuevo != null ? "col-md-6" : "col-md-12")">
+            <div class="card shadow-sm border-dark">
+                <div class="card-header bg-dark text-white py-3 d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0"><i class="bi bi-clock-history"></i> Historial de Pedidos</h5>
+                    <form method="post" class="m-0">
+                        <button type="submit" asp-page-handler="BtRefrescar" class="btn btn-sm btn-outline-light" formnovalidate>
+                            <i class="bi bi-arrow-clockwise"></i> Refrescar
+                        </button>
+                    </form>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover table-striped mb-0 align-middle text-dark">
+                            <thead class="table-secondary small font-monospace">
+                                <tr>
+                                    <th style="width: 8%;">ID</th>
+                                    <th style="width: 34%;">Productos Elegidos</th>
+                                    <th style="width: 18%;">Fecha</th>
+                                    <th style="width: 12%;">Total</th>
+                                    <th style="width: 16%;">Estado</th>
+                                    @if (Model.ObtenerRolUsuario() == 1)
+                                    {
+                                        <th style="width: 12%;" class="text-center">Acciones</th>
+                                    }
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model.ListaPedidos != null && Model.ListaPedidos.Any())
+                                {
+                                    foreach (var item in Model.ListaPedidos)
+                                    {
+                                        var estadoObj = Model.ListaEstadosPedido?.FirstOrDefault(e => e.Id == item.EstadoPedidoId);
+                                        string nombreEstado = estadoObj != null ? estadoObj.Nombre : "Desconocido";
+                                        var detallesDeEstePedido = Model.ListaTodosLosDetalles?.Where(d => d.PedidoId == item.Id).ToList();
+
+                                        <tr>
+                                            <td class="fw-bold">#@item.Id</td>
+                                            <td>
+                                                @if (detallesDeEstePedido.Count > 0)
+                                                {
+                                                    <ul class="list-unstyled mb-0 small text-start">
+                                                        @foreach (var det in detallesDeEstePedido)
+                                                        {
+                                                            var prod = Model.ListaProductos?.FirstOrDefault(p => p.Id == det.ProductoId);
+                                                            string nombreProducto = prod != null ? prod.Nombre : $"Art. #{det.ProductoId}";
+                                                            <li>
+                                                                <i class="bi bi-box-seam text-secondary me-1"></i>
+                                                                <span class="fw-bold">@det.Cantidad x</span> @nombreProducto
+                                                            </li>
+                                                        }
+                                                    </ul>
+                                                }
+                                                else
+                                                {
+                                                    <span class="text-muted small">Sin productos</span>
+                                                }
+                                            </td>
+                                            <td class="small text-muted">@item.FechaCreacion.ToString("dd/MM/yyyy HH:mm")</td>
+                                            <td class="fw-bold text-success">$@item.Total.ToString("N0")</td>
+                                            <td>
+                                                <span class="badge bg-secondary text-white px-2 py-2 text-uppercase font-monospace" style="font-size: 0.75rem;">
+                                                    @nombreEstado
+                                                </span>
+                                            </td>
+                                            <td>
+                                                @if (Model.ObtenerRolUsuario() == 2 && (item.EstadoPedidoId == 2 || item.EstadoPedidoId == 3))
+                                                {
+                                                    <a asp-page="/Ventanas/RastreoPedido" class="btn btn-sm btn-danger fw-bold shadow-sm">
+                                                        <i class="bi bi-geo-alt-fill"></i> Ver Rastreo
+                                                    </a>
+                                                }
+                                                else
+                                                {
+                                                    <span class="text-muted small">Sin rastreo activo</span>
+                                                }
+                                            </td>
+                                            @if (Model.ObtenerRolUsuario() == 1)
+                                            {
+                                                <td class="text-center">
+                                                    <div class="d-flex justify-content-center gap-1">
+                                                        <form method="post" asp-page-handler="BtEditar" asp-route-id="@item.Id" class="m-0">
+                                                            <button type="submit" class="btn btn-sm btn-outline-primary" title="Editar todo el pedido">
+                                                                <i class="bi bi-pencil-square"></i>
+                                                            </button>
+                                                        </form>
+
+                                                        <form method="post" asp-page-handler="BtBorrar" asp-route-id="@item.Id" class="m-0" onsubmit="return confirm('¿Eliminar el pedido #@item.Id definitivamente?');">
+                                                            <button type="submit" class="btn btn-sm btn-outline-danger" title="Borrar pedido del historial">
+                                                                <i class="bi bi-trash3-fill"></i>
+                                                            </button>
+                                                        </form>
+                                                    </div>
+                                                </td>
+                                            }
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="@(Model.ObtenerRolUsuario() == 1 ? 6 : 5)" class="text-center py-4 text-muted">No registras órdenes previas en el sistema.</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

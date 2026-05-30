@@ -1,0 +1,136 @@
+﻿@page
+@model asp_domicilios_presentacion.Pages.Ventanas.FacturasModel
+@{
+    ViewData["Title"] = "Facturas";
+    int rolUsuario = Model.ObtenerRolUsuario();
+}
+
+<div class="py-5">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2><i class="bi bi-receipt me-2"></i> Historial de Facturación</h2>
+            <form method="post">
+                <button type="submit" asp-page-handler="BtRefrescar" class="btn btn-outline-warning text-white border-white me-2">
+                    <i class="bi bi-arrow-clockwise"></i> Actualizar
+                </button>
+                @if (rolUsuario == 1 && Model.FacturaNueva == null && !Model.Borrando)
+                {
+                    <button type="submit" asp-page-handler="BtNuevo" class="btn btn-warning fw-bold text-dark">
+                        <i class="bi bi-plus-circle me-1"></i> Nueva Factura
+                    </button>
+                }
+            </form>
+        </div>
+
+        @if (Model.FacturaNueva != null && !Model.Borrando)
+        {
+            <div class="card shadow-sm border-0 rounded-3 mb-5">
+                <div class="card-header bg-dark text-white py-3">
+                    <h5 class="mb-0"><i class="bi bi-file-earmark-medical me-2"></i> Generar Nueva Factura</h5>
+                </div>
+                <div class="card-body bg-white p-4">
+                    <form method="post" asp-page-handler="BtGuardar">
+                        <input type="hidden" asp-for="FacturaNueva.Id" />
+
+                        <div class="row text-dark">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label fw-semibold text-secondary">Pago Relacionado</label>
+                                <select class="form-select" asp-for="FacturaNueva.PagoId" asp-items="Model.OptionPagos" required>
+                                    <option value="">-- Seleccione el pago enlazado --</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label fw-semibold text-secondary">Fecha Emisión</label>
+                                <input type="datetime-local" class="form-control" asp-for="FacturaNueva.FechaEmision" required />
+                            </div>
+                        </div>
+
+                        <div class="alert alert-light border border-warning text-dark small mt-2 mb-3">
+                            <i class="bi bi-info-circle-fill text-warning me-2"></i>
+                            El **Impuesto (IVA 19%)** y el **Total Neto** se calcularán de manera automática basados en el valor del pago seleccionado al presionar "Emitir".
+                        </div>
+
+                        <div class="d-flex justify-content-end gap-2">
+                            <button type="submit" class="btn btn-danger px-4">Emitir Factura</button>
+                            <button type="submit" asp-page-handler="BtCerrar" class="btn btn-outline-secondary px-4">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        }
+
+        @if (Model.ListaFacturas != null)
+        {
+            <div class="card shadow border-0 rounded-3">
+                <div class="card-body bg-white p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle mb-0">
+                            <thead class="table-dark text-uppercase small font-weight-bold">
+                                <tr>
+                                    <th class="ps-4">Factura</th>
+                                    <th>Pedido</th>
+                                    <th>Productos Comprados</th>
+                                    <th>Fecha Emisión</th>
+                                    <th class="text-end">Impuesto</th>
+                                    <th class="text-end">Total Facturado</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-dark">
+                                @if (Model.ListaFacturas.Count > 0)
+                                {
+                                    foreach (var item in Model.ListaFacturas)
+                                    {
+                                        <tr>
+                                            <td class="ps-4 fw-bold text-danger">#@item.Id</td>
+                                            <td><span class="badge bg-secondary">Ref #@item.PedidoId</span></td>
+
+                                            <td>
+                                                @if (Model.ProductosPorFactura.ContainsKey(item.Id) && Model.ProductosPorFactura[item.Id].Count > 0)
+                                                {
+                                                    <ul class="list-unstyled mb-0 small">
+                                                        @foreach (var prodText in Model.ProductosPorFactura[item.Id])
+                                                        {
+                                                            <li><i class="bi bi-dot text-warning fs-5"></i> @prodText</li>
+                                                        }
+                                                    </ul>
+                                                }
+                                                else
+                                                {
+                                                    <span class="text-muted small">Sin productos registrados</span>
+                                                }
+                                            </td>
+
+                                            <td>@item.FechaEmision.ToString("dd/MM/yyyy hh:mm tt")</td>
+                                            <td class="text-end fw-semibold text-muted">$@item.Impuesto.ToString("N0")</td>
+                                            <td class="text-end fw-bold text-success pe-3">$@item.Total.ToString("N0")</td>
+
+                                            <td class="text-center">
+                                                <form method="post" class="d-inline">
+                                            <td class="text-center">
+                                                <a asp-page="/Ventanas/FacturasImpresion" asp-route-id="@item.Id" target="_blank" class="btn btn-sm btn-danger px-3 fw-bold">
+                                                    <i class="bi bi-file-earmark-pdf-fill me-1"></i> Ver PDF
+                                                </a>
+                                            </td>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="7" class="text-center py-5 text-muted">
+                                            No se registran facturas disponibles.
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

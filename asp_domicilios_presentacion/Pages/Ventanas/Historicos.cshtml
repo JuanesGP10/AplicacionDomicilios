@@ -1,0 +1,55 @@
+﻿@page
+@model asp_domicilios_presentacion.Pages.Ventanas.HistoricosModel
+@{
+    ViewData["Title"] = "Historial del Sistema - Modo Administrador";
+}
+
+<div class="container mt-4">
+    <h2>Historial General de Actividad (Solo Administrador)</h2>
+    <hr />
+
+    @if (ViewData["Mensaje"] != null)
+    {
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            @ViewData["Mensaje"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="mb-3">
+        <form method="post">
+            <button type="submit" asp-page-handler="BtRefrescar" class="btn btn-secondary">Refrescar Lista</button>
+        </form>
+    </div>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Fecha / Hora</th>
+                <th>Entidad Afectada</th>
+                <th>Descripción de Actividad</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Lista != null)
+            {
+                foreach (var item in Model.Lista)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Fecha.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td>@item.EntidadAfectada</td>
+                        <td>@item.Descripcion</td>
+                    </tr>
+                }
+                if (Model.Lista.Count == 0)
+                {
+                    <tr>
+                        <td colspan="4" class="text-center text-muted">No hay registros en el historial del sistema.</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

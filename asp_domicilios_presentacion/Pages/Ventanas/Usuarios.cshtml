@@ -1,0 +1,174 @@
+﻿@page
+@model asp_domicilios_presentacion.Pages.Ventanas.UsuariosModel
+@{
+    ViewData["Title"] = "Gestión de Usuarios";
+    int rolUsuario = HttpContext.Session.GetInt32("Rol") ?? 0;
+}
+
+<div class="container mt-4">
+    <h2>Gestión de Usuarios</h2>
+    <hr />
+
+    @if (ViewData["Mensaje"] != null)
+    {
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            @ViewData["Mensaje"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h4 class="fw-bold text-light mb-1">
+                <i class="bi bi-people-fill text-primary me-2"></i>
+            </h4>
+            <p class="text-muted small mb-0">Control general de roles y cuentas vinculadas al sistema.</p>
+        </div>
+
+        <div>
+            <a asp-page-handler="ExportarExcel" class="btn btn-success fw-bold shadow-sm d-flex align-items-center px-4 py-2">
+                <i class="bi bi-file-earmark-excel-fill me-2" style="font-size: 1.2rem;"></i>
+                Descargar Reporte Excel
+            </a>
+        </div>
+    </div>
+    @if (Model.Lista != null)
+    {
+        <div class="mb-3">
+            <form method="post">
+                @if (rolUsuario == 1)
+                {
+                    <button type="submit" asp-page-handler="BtNuevo" class="btn btn-primary">Nuevo Registro</button>
+                }
+                <button type="submit" asp-page-handler="BtRefrescar" class="btn btn-secondary">Refrescar</button>
+            </form>
+        </div>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Cédula</th>
+                    <th>Fecha Nacimiento</th>
+                    <th>Email</th>
+                    <th>Rol</th>
+                    @if (rolUsuario == 1)
+                    {
+                        <th>Acciones</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Lista)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Nombre</td>
+                        <td>@item.Cedula</td>
+                        <td>@item.FechaNacimiento.ToString("dd/MM/yyyy")</td>
+                        <td>@item.Email</td>
+                        <td>
+                            @if (item.Rol == 1)
+                            {
+                                <span>Admin</span>
+                            }
+                            else if (item.Rol == 2)
+                            {
+
+                                <span>Cliente</span>
+                            }
+                            else if (item.Rol == 3)
+                            {
+
+                                <span>Repartidor</span>
+                            }
+                            else
+                            {
+
+                                @item.Rol
+                            }
+                        </td>
+                        @if (rolUsuario == 1)
+                        {
+                            <td>
+                                <form method="post">
+                                    <button type="submit" asp-page-handler="BtModificar" asp-route-data="@item.Id" class="btn btn-sm btn-warning">Editar</button>
+                                    <button type="submit" asp-page-handler="BtBorrarVal" asp-route-data="@item.Id" class="btn btn-sm btn-danger">Borrar</button>
+                                </form>
+                            </td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+    @if (Model.Usuario != null)
+    {
+        <div class="card mx-auto" style="max-width: 500px;">
+            <div class="card-header">
+                <h5>@(Model.Borrando ? "Eliminar Usuario" : (Model.Usuario.Id == 0 ? "Nuevo Usuario" : "Modificar Usuario"))</h5>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <input type="hidden" asp-for="Usuario.Id" />
+                    <input type="hidden" asp-for="Borrando" />
+
+                    <div class="form-group mb-3">
+                        <label class="form-label">Nombre Completo</label>
+                        <input type="text" asp-for="Usuario.Nombre" class="form-control" readonly="@Model.Borrando" required />
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="form-label">Cédula</label>
+                        <input type="text" asp-for="Usuario.Cedula" class="form-control" readonly="@Model.Borrando" required />
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="form-label">Fecha de Nacimiento</label>
+                        <input type="date" asp-for="Usuario.FechaNacimiento" class="form-control" readonly="@Model.Borrando" required />
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="form-label">Correo Electrónico</label>
+                        <input type="email" asp-for="Usuario.Email" class="form-control" readonly="@Model.Borrando" required />
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="form-label">Contrasena</label>
+                        <input type="text" asp-for="Usuario.Contrasena" class="form-control" readonly="@Model.Borrando" required />
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label class="form-label">Rol del Usuario</label>
+                        @if (Model.Borrando)
+                        {
+                            <input type="number" asp-for="Usuario.Rol" class="form-control" readonly />
+                        }
+                        else
+                        {
+                            <select asp-for="Usuario.Rol" class="form-select" required>
+                                <option value="1">Administrador</option>
+                                <option value="2">Cliente</option>
+                                <option value="3">Repartidor</option>
+                            </select>
+                        }
+                    </div>
+
+                    <div class="text-end">
+                        <button type="submit" asp-page-handler="BtCerrar" class="btn btn-secondary">Cancelar</button>
+                        @if (Model.Borrando)
+                        {
+                            <button type="submit" asp-page-handler="BtBorrar" class="btn btn-danger">Confirmar Borrado</button>
+                        }
+                        else
+                        {
+                            <button type="submit" asp-page-handler="BtGuardar" class="btn btn-success">Guardar</button>
+                        }
+                    </div>
+                </form>
+            </div>
+        </div>
+    }
+</div>
+

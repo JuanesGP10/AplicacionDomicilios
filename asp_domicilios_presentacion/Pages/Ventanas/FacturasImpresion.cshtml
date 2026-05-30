@@ -1,0 +1,134 @@
+﻿@page
+@model asp_domicilios_presentacion.Pages.Ventanas.FacturasImpresionModel
+@{
+    Layout = null; // ⚡ OBLIGATORIO: Elimina el menú y estilos globales de la aplicación
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Factura_#@Model.Factura.Id</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .invoice-box {
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            border: 1px solid #eee;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        }
+
+        @@media print {
+            .no-print {
+                display: none !important;
+            }
+
+            .invoice-box {
+                box-shadow: none;
+                border: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container my-4 no-print text-center">
+        <button onclick="window.print();" class="btn btn-danger me-2">
+            <i class="bi bi-printer-fill"></i> Guardar como PDF / Imprimir
+        </button>
+        <button onclick="window.close();" class="btn btn-outline-secondary">Cerrar Ventana</button>
+    </div>
+
+    <div class="invoice-box bg-white text-dark">
+        <div class="row mb-4">
+            <div class="col-6">
+                <h2 class="text-danger fw-bold m-0"></> Los Quesudos</h2>
+                <p class="text-muted small">Las mejores comidas rapidas de Medellin</p>
+            </div>
+            <div class="col-6 text-end">
+                <h3 class="fw-bold text-uppercase text-secondary m-0">Factura</h3>
+                <h4 class="text-danger fw-semibold">#@Model.Factura.Id</h4>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row mb-4">
+            <div class="col-6">
+                <p class="mb-1 fw-bold text-secondary text-uppercase small">Detalle de Emisión</p>
+                <strong>Fecha:</strong> @Model.Factura.FechaEmision.ToString("dd/MM/yyyy hh:mm tt")<br />
+                <strong>Pedido de Referencia:</strong> #@Model.Factura.PedidoId
+            </div>
+            <div class="col-6 text-end">
+                <p class="mb-1 fw-bold text-secondary text-uppercase small">Facturado A:</p>
+                <strong class="text-uppercase">@Model.NombreCliente</strong><br />
+                <strong>C.C. / Cédula:</strong> @Model.CedulaCliente
+            </div>
+        </div>
+        </div>
+
+        <table class="table table-striped align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th style="width: 10%;">Cant.</th>
+                    <th>Descripción del Producto</th>
+                    <th class="text-end" style="width: 20%;">Precio Unitario</th>
+                    <th class="text-end" style="width: 25%;">Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Detalles)
+                {
+                    <tr>
+                        <td class="fw-bold">@item.Cantidad</td>
+                        <td>@item.NombreProducto</td>
+                        <td class="text-end">$@item.PrecioUnitario.ToString("N0")</td>
+                        <td class="text-end fw-semibold">$@item.Subtotal.ToString("N0")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="row justify-content-end mt-4">
+            <div class="col-5">
+                <table class="table table-sm table-borderless text-end">
+                    <tr>
+                        <td class="text-secondary fw-semibold">Subtotal:</td>
+                        <td class="fw-semibold">$@Model.SubtotalCalculado.ToString("N2")</td>
+                    </tr>
+                    <tr>
+                        <td class="text-secondary fw-semibold">Impuesto (IVA):</td>
+                        <td class="fw-semibold text-muted">$@Model.Factura.Impuesto.ToString("N2")</td>
+                    </tr>
+                    <tr class="border-top">
+                        <td class="text-danger fw-bold fs-5">TOTAL NETO:</td>
+                        <td class="text-danger fw-bold fs-5">$@Model.Factura.Total.ToString("N2")</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="text-center mt-5 pt-4 border-top text-muted small">
+            <p class="mb-0">¡Gracias por tu confianza y tu compra!</p>
+            <p>Si tienes dudas sobre este comprobante, comunícate con soporte técnico.</p>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                window.print();
+            }, 300);
+        };
+    </script>
+</body>
+</html>

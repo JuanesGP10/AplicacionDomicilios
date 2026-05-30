@@ -1,0 +1,143 @@
+﻿@page
+@model asp_domicilios_presentacion.Pages.Ventanas.VehiculosModel
+@{
+    ViewData["Title"] = "Gestión de Vehículos";
+    int rolUsuario = HttpContext.Session.GetInt32("Rol") ?? 0;
+}
+
+<div class="container mt-4">
+    <h2>Gestión de Vehículos</h2>
+    <hr />
+
+    @if (ViewData["Mensaje"] != null)
+    {
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            @ViewData["Mensaje"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    @if (Model.Lista != null)
+    {
+        <div class="mb-3">
+            <form method="post">
+                @if (rolUsuario == 1)
+                {
+                    <button type="submit" asp-page-handler="BtNuevo" class="btn btn-primary">Nuevo Registro</button>
+                }
+                <button type="submit" asp-page-handler="BtRefrescar" class="btn btn-secondary">Refrescar</button>
+            </form>
+        </div>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Placa</th>
+                    <th>Tipo</th>
+                    <th>Modelo</th>
+                    <th>Estado</th>
+                    @if (rolUsuario == 1)
+                    {
+                        <th>Acciones</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Lista)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Placa</td>
+                        <td>@item.Tipo</td>
+                        <td>@item.Modelo</td>
+                        <td>
+                            @if (item.Activo)
+                            {
+                                <span class="badge bg-success">Activo</span>
+                            }
+                            else
+                            {
+
+                                <span class="badge bg-danger">Inactivo</span>
+                            }
+                        </td>
+                        @if (rolUsuario == 1)
+                        {
+                            <td>
+                                <form method="post">
+                                    <button type="submit" asp-page-handler="BtModificar" asp-route-data="@item.Id" class="btn btn-sm btn-warning">Editar</button>
+                                    <button type="submit" asp-page-handler="BtBorrarVal" asp-route-data="@item.Id" class="btn btn-sm btn-danger">Borrar</button>
+                                </form>
+                            </td>
+                        }
+                    </tr>
+                }
+                @if (Model.Lista.Count == 0)
+                {
+                    <tr>
+                        <td colspan="@(rolUsuario == 1 ? 6 : 5)" class="text-center text-muted">No hay vehículos registrados en el sistema.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+    @if (Model.Vehiculo != null)
+    {
+        <div class="card mx-auto" style="max-width: 500px;">
+            <div class="card-header">
+                <h5>@(Model.Borrando ? "Eliminar Vehículo" : (Model.Vehiculo.Id == 0 ? "Nuevo Vehículo" : "Modificar Vehículo"))</h5>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <input type="hidden" asp-for="Vehiculo.Id" />
+                    <input type="hidden" asp-for="Borrando" />
+
+                    <div class="form-group mb-3">
+                        <label class="form-label">Placa</label>
+                        <input type="text" asp-for="Vehiculo.Placa" class="form-control" readonly="@Model.Borrando" placeholder="Ej: ABC123" required />
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="form-label">Tipo de Vehículo</label>
+                        <input type="text" asp-for="Vehiculo.Tipo" class="form-control" readonly="@Model.Borrando" placeholder="Ej: Moto, Carro, Bicicleta" required />
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="form-label">Modelo / Año</label>
+                        <input type="text" asp-for="Vehiculo.Modelo" class="form-control" readonly="@Model.Borrando" placeholder="Ej: 2024" required />
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label class="form-label">Estado del Vehículo</label>
+                        @if (Model.Borrando)
+                        {
+                            <input type="text" class="form-control" value="@(Model.Vehiculo.Activo ? "Activo" : "Inactivo")" readonly />
+                            <input type="hidden" asp-for="Vehiculo.Activo" />
+                        }
+                        else
+                        {
+                            <select asp-for="Vehiculo.Activo" class="form-select" required>
+                                <option value="true">Activo / Operando</option>
+                                <option value="false">Inactivo / En Mantenimiento</option>
+                            </select>
+                        }
+                    </div>
+
+                    <div class="text-end">
+                        <button type="submit" asp-page-handler="BtCerrar" class="btn btn-secondary">Cancelar</button>
+                        @if (Model.Borrando)
+                        {
+                            <button type="submit" asp-page-handler="BtBorrar" class="btn btn-danger">Confirmar Borrado</button>
+                        }
+                        else
+                        {
+                            <button type="submit" asp-page-handler="BtGuardar" class="btn btn-success">Guardar</button>
+                        }
+                    </div>
+                </form>
+            </div>
+        </div>
+    }
+</div>

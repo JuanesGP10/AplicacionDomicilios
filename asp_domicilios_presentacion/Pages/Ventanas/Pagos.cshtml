@@ -1,0 +1,171 @@
+﻿@page
+@model asp_domicilios_presentacion.Pages.Ventanas.PagosModel
+@{
+    ViewData["Title"] = "Pagos";
+    int rolUsuario = Model.ObtenerRolUsuario();
+}
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2><i class="bi bi-credit-card me-2"></i> Pagos</h2>
+        <form method="post">
+            <button type="submit" asp-page-handler="BtRefrescar" class="btn btn-outline-secondary me-2">
+                <i class="bi bi-arrow-clockwise"></i> Actualizar
+            </button>
+            @if (rolUsuario == 1 && Model.PagoNuevo == null && !Model.Borrando)
+            {
+                <button type="submit" asp-page-handler="BtNuevo" class="btn btn-primary">
+                    <i class="bi bi-plus-circle me-1"></i> Registrar Pago
+                </button>
+            }
+        </form>
+    </div>
+
+    @if (ViewData["Mensaje"] != null)
+    {
+        <div class="alert alert-warning alert-dismissible fade show shadow-sm" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i> @ViewData["Mensaje"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    @if (Model.Borrando && Model.PagoNuevo != null)
+    {
+        <div class="card border-danger shadow mb-4">
+            <div class="card-header bg-danger text-white">
+                <h5 class="mb-0"><i class="bi bi-trash me-2"></i> Eliminar Registro</h5>
+            </div>
+            <div class="card-body">
+                <p class="fs-5">¿Está seguro de que desea eliminar el registro de pago con ID <strong>@Model.PagoNuevo.Id</strong>?</p>
+                <form method="post">
+                    <input type="hidden" asp-for="PagoNuevo.Id" />
+                    <button type="submit" asp-page-handler="BtBorrar" class="btn btn-danger me-2">Eliminar</button>
+                    <button type="submit" asp-page-handler="BtCerrar" class="btn btn-outline-secondary">Cancelar</button>
+                </form>
+            </div>
+        </div>
+    }
+
+    @if (Model.PagoNuevo != null && !Model.Borrando)
+    {
+        <div class="card shadow-sm border-0 rounded-3 mb-5">
+            <div class="card-header bg-dark text-white py-3">
+                <h5 class="mb-0"><i class="bi bi-cash-coin me-2"></i> Registrar Nuevo Pago</h5>
+            </div>
+            <div class="card-body bg-white p-4">
+                <form method="post" asp-page-handler="BtGuardar">
+                    <input type="hidden" asp-for="PagoNuevo.Id" />
+
+                    <div class="row text-dark">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label fw-semibold text-secondary">Pedido Relacionado</label>
+                            <select class="form-select" asp-for="PagoNuevo.PedidoId" asp-items="Model.OptionPedidos" required>
+                                <option value="">-- Seleccione el pedido --</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label fw-semibold text-secondary">Estado del Pago</label>
+                            <select class="form-select" asp-for="PagoNuevo.EstadoPagoId" asp-items="Model.OptionEstados" required>
+                                <option value="">-- Seleccione el estado --</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label fw-semibold text-secondary">Método de Pago</label>
+                            <select class="form-select" asp-for="PagoNuevo.MetodoPagoId" asp-items="Model.OptionMetodos" required>
+                                <option value="">-- Seleccione el método --</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label fw-semibold text-secondary">Fecha de Pago</label>
+                            <input type="datetime-local" class="form-control" asp-for="PagoNuevo.FechaPago" required />
+                        </div>
+                    </div>
+
+                    <div class="alert alert-light border border-info text-dark small mt-2 mb-3">
+                        <i class="bi bi-info-circle-fill text-info me-2"></i>
+                        El **Monto total** se calculará de manera automática en base a la sumatoria de los productos del pedido seleccionado al presionar "Registrar".
+                    </div>
+
+                    <div class="d-flex justify-content-end gap-2">
+                        <button type="submit" class="btn btn-danger px-4">Registrar Pago</button>
+                        <button type="submit" asp-page-handler="BtCerrar" class="btn btn-outline-secondary px-4">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    }
+
+    @if (Model.Lista != null)
+    {
+        <div class="card shadow-sm border-0 rounded-3">
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-light text-secondary text-uppercase small font-weight-bold">
+                            <tr>
+                                <th class="ps-4">Id</th>
+                                <th>PedidoId</th>
+                                <th>FechaPago</th>
+                                <th>Monto</th>
+                                @if (rolUsuario == 1)
+                                {
+                                    <th>Comision</th>
+                                }
+                                <th>MetodoPagoId</th>
+                                <th>EstadoPagoId</th>
+                                @if (rolUsuario == 1)
+                                {
+                                    <th class="text-center">Acciones</th>
+                                }
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model.Lista.Count > 0)
+                            {
+                                foreach (var item in Model.Lista)
+                                {
+                                    <tr>
+                                        <td class="ps-4 fw-bold">@item.Id</td>
+                                        <td>@item.PedidoId</td>
+                                        <td>@item.FechaPago.ToString("dd/MM/yyyy hh:mm tt")</td>
+                                        <td class="text-success fw-semibold">$@item.Monto.ToString("N2")</td>
+                                        @if (rolUsuario == 1)
+                                        {
+                                            <td class="text-danger fw-semibold">$@item.Comision.ToString("N2")</td>
+                                        }
+                                        <td>@item.MetodoPagoId</td>
+                                        <td>@item.EstadoPagoId</td>
+                                        @if (rolUsuario == 1)
+                                        {
+                                            <td class="text-center pe-3">
+                                                <form method="post" class="d-inline">
+                                                    <button type="submit" asp-page-handler="BtModificar" asp-route-data="@item.Id" class="btn btn-sm btn-outline-primary me-1">
+                                                        <i class="bi bi-pencil"></i>
+                                                    </button>
+                                                    <button type="submit" asp-page-handler="BtBorrarVal" asp-route-data="@item.Id" class="btn btn-sm btn-outline-danger">
+                                                        <i class="bi bi-trash"></i>
+                                                    </button>
+                                                </form>
+                                            </td>
+                                        }
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="@(rolUsuario == 1 ? 8 : 6)" class="text-center py-5 text-muted">
+                                        No se registran pagos.
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+</div>

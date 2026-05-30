@@ -1,0 +1,173 @@
+﻿@page
+@model asp_domicilios_presentacion.Pages.Ventanas.ProductosModel
+@{
+    ViewData["Title"] = "Gestión de Productos";
+    int rolUsuario = HttpContext.Session.GetInt32("Rol") ?? 0;
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2><i class="bi bi-shop"></i> Nuestro Menú - Catálogo</h2>
+    </div>
+    <hr />
+
+    @if (ViewData["Mensaje"] != null)
+    {
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <i class="bi bi-exclamation-triangle-fill"></i> @ViewData["Mensaje"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    @if (Model.Lista != null)
+    {
+        <div class="mb-4 text-end">
+            <form method="post">
+                @if (rolUsuario == 1)
+                {
+                    <button type="submit" asp-page-handler="BtNuevo" class="btn btn-primary shadow-sm">
+                        <i class="bi bi-plus-circle"></i> Nuevo Registro
+                    </button>
+                }
+                <button type="submit" asp-page-handler="BtRefrescar" class="btn btn-secondary shadow-sm">
+                    <i class="bi bi-arrow-clockwise"></i> Refrescar
+                </button>
+            </form>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mb-5">
+            @foreach (var item in Model.Lista)
+            {
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 bg-white">
+
+                        <img src="@(string.IsNullOrEmpty(item.Urlimagen) ? "/images/productos/default.png" : item.Urlimagen)"
+                             alt="@item.Nombre"
+                             class="card-img-top p-2 rounded-4"
+                             style="height: 180px; object-fit: cover;" />
+
+                        <div class="card-body d-flex flex-column justify-content-between pt-1">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="card-title fw-bold text-dark mb-0 text-truncate" style="max-width: 80%;">@item.Nombre</h5>
+                                    <span class="badge bg-secondary">ID: @item.Id</span>
+                                </div>
+                                <p class="card-text text-muted small text-start" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 38px;">
+                                    @item.Descripcion
+                                </p>
+                            </div>
+
+                            <div class="mt-3">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="fs-5 fw-bold text-success">$@item.Precio.ToString("N0")</span>
+                                    @if (rolUsuario == 1)
+                                    {
+                                        <span class="badge @(item.Stock > 5 ? "bg-success" : "bg-danger")">Stock: @item.Stock</span>
+                                    }
+                                </div>
+
+                                <div class="text-center border-top pt-2">
+                                    @if (rolUsuario == 2 )
+                                    {
+                                        <a asp-page="/Ventanas/Pedidos" asp-route-accion="nuevo" asp-route-productoId="@item.Id" class="btn btn-sm btn-success w-100 fw-bold">
+                                            <i class="bi bi-cart-plus-fill"></i> Ordenar Producto
+                                        </a>
+                                    }
+                                    else if (rolUsuario == 1)
+                                    {
+                                        <form method="post" class="d-flex justify-content-center">
+                                            <button type="submit" asp-page-handler="BtModificar" asp-route-data="@item.Id" class="btn btn-sm btn-outline-warning me-1 w-50" title="Editar">
+                                                <i class="bi bi-pencil-square"></i> Editar
+                                            </button>
+                                            <button type="submit" asp-page-handler="BtBorrarVal" asp-route-data="@item.Id" class="btn btn-sm btn-outline-danger w-50" title="Eliminar">
+                                                <i class="bi bi-trash"></i> Borrar
+                                            </button>
+                                        </form>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            }
+        </div>
+    }
+
+    @if (Model.Producto != null)
+    {
+        <div class="card shadow-sm mx-auto my-4" style="max-width: 600px;">
+            <div class="card-header @(Model.Borrando ? "bg-danger" : "bg-dark") text-white">
+                <h5 class="mb-0">
+                    @(Model.Borrando ? "Eliminar Producto" : (Model.Producto.Id == 0 ? "Nuevo Producto" : "Modificar Producto"))
+                </h5>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <input type="hidden" asp-for="Producto.Id" />
+                    <input type="hidden" asp-for="Borrando" />
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Nombre del Producto</label>
+                        <input type="text" asp-for="Producto.Nombre" class="form-control" readonly="@Model.Borrando" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Descripción del Producto</label>
+                        <textarea asp-for="Producto.Descripcion" class="form-control" rows="2" readonly="@Model.Borrando"></textarea>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label fw-bold">Precio ($)</label>
+                            <input type="number" step="0.01" asp-for="Producto.Precio" class="form-control" readonly="@Model.Borrando" required />
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label fw-bold">Unidades en Stock</label>
+                            <input type="number" asp-for="Producto.Stock" class="form-control" readonly="@Model.Borrando" required />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Categoría Asociada</label>
+                        @if (Model.Borrando)
+                        {
+                            <input type="number" asp-for="Producto.CategoriaId" class="form-control" readonly />
+                        }
+                        else
+                        {
+                            <select asp-for="Producto.CategoriaId" asp-items="Model.OptionCategorias" class="form-select" required>
+                                <option value="">-- Seleccione una Categoría --</option>
+                            </select>
+                        }
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-bold"><i class="bi bi-link-45deg"></i> URL de la Imagen</label>
+                        <input type="text" asp-for="Producto.Urlimagen" class="form-control" placeholder="Ej: /images/HamburguesaSencilla.webp" readonly="@Model.Borrando" />
+                        <div class="form-text small text-muted">Escribe la ruta local de tu proyecto o un link directo de internet.</div>
+                    </div>
+
+                    <div class="text-end border-top pt-3">
+                        <button type="submit" asp-page-handler="BtRefrescar" class="btn btn-secondary">
+                            <i class="bi bi-x-circle"></i> Cancelar
+                        </button>
+
+                        @if (Model.Borrando)
+                        {
+                            <button type="submit" asp-page-handler="BtBorrar" class="btn btn-danger">
+                                <i class="bi bi-trash"></i> Confirmar Eliminación
+                            </button>
+                        }
+                        else
+                        {
+                            <button type="submit" asp-page-handler="BtGuardar" class="btn btn-success">
+                                <i class="bi bi-check-circle"></i> Guardar Cambios
+                            </button>
+                        }
+                    </div>
+                </form>
+            </div>
+        </div>
+    }
+</div>

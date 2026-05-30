@@ -1,0 +1,123 @@
+﻿@page
+@model asp_domicilios_presentacion.Pages.Ventanas.CalificacionesModel
+@{
+    ViewData["Title"] = "Calificaciones";
+}
+
+<div class="container mt-4">
+    <h2>Historial de Calificaciones</h2>
+    <hr />
+
+    @if (ViewData["Mensaje"] != null)
+    {
+        <div class="alert alert-info">@ViewData["Mensaje"]</div>
+    }
+
+    @* VISTA 1: LISTADO DE CALIFICACIONES *@
+    @if (Model.Lista != null)
+    {
+        <form method="post">
+            <div class="mb-3">
+                @if (Model.ObtenerRolUsuario() == 1)
+                {
+                    <button type="submit" asp-page-handler="BtNuevo" class="btn btn-primary">Nueva Calificación</button>
+                }
+                <button type="submit" asp-page-handler="BtRefrescar" class="btn btn-secondary">Refrescar</button>
+            </div>
+
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>ID Pedido</th>
+                        <th>Puntaje (1-5)</th>
+                        <th>Comentario</th>
+                        @if (Model.ObtenerRolUsuario() == 1)
+                        {
+                            <th>Acciones</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.Lista.Count > 0)
+                    {
+                        foreach (var item in Model.Lista)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.PedidoId</td>
+                                <td><strong>@item.Puntaje ★</strong></td>
+                                <td>@item.Comentario</td>
+                                @if (Model.ObtenerRolUsuario() == 1)
+                                {
+                                    <td>
+                                        <button type="submit" asp-page-handler="BtModificar" asp-route-data="@item.Id" class="btn btn-sm btn-warning">Modificar</button>
+                                        <button type="submit" asp-page-handler="BtBorrarVal" asp-route-data="@item.Id" class="btn btn-sm btn-danger">Borrar</button>
+                                    </td>
+                                }
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="@(Model.ObtenerRolUsuario() == 1 ? 5 : 4)" class="text-center">
+                                No se han registrado calificaciones en el sistema todavía.
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </form>
+    }
+
+    @* VISTA 2: FORMULARIO DE EDICIÓN / ADICIÓN (Solo Admin) *@
+    @if (Model.Calificacion != null && !Model.Borrando && Model.ObtenerRolUsuario() == 1)
+    {
+        <div class="card p-4">
+            <h4>Formulario de Calificación</h4>
+            <form method="post">
+                @Html.HiddenFor(x => x.Calificacion!.Id)
+
+                <div class="mb-3">
+                    <label class="form-label">Código del Pedido (PedidoId)</label>
+                    @Html.TextBoxFor(x => x.Calificacion!.PedidoId, new { @class = "form-control", @type = "number", required = "required" })
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Puntaje (Estrellas de 1 a 5)</label>
+                    @Html.TextBoxFor(x => x.Calificacion!.Puntaje, new { @class = "form-control", @type = "number", min = "1", max = "5", required = "required" })
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Comentarios u Observaciones</label>
+                    @Html.TextAreaFor(x => x.Calificacion!.Comentario, new { @class = "form-control", rows = "3" })
+                </div>
+
+                <div>
+                    <button type="submit" asp-page-handler="BtGuardar" class="btn btn-success">Guardar</button>
+                    <button type="submit" asp-page-handler="BtCerrar" class="btn btn-secondary" formnovalidate>Cancelar</button>
+                </div>
+            </form>
+        </div>
+    }
+
+    @* VISTA 3: PANEL DE ELIMINACIÓN (Solo Admin) *@
+    @if (Model.Calificacion != null && Model.Borrando && Model.ObtenerRolUsuario() == 1)
+    {
+        <div class="card border-danger p-4">
+            <h4 class="text-danger">¿Confirmas que deseas eliminar esta calificación?</h4>
+            <p><strong>ID Calificación:</strong> @Model.Calificacion.Id</p>
+            <p><strong>Pedido Origen:</strong> @Model.Calificacion.PedidoId</p>
+            <p><strong>Puntaje:</strong> @Model.Calificacion.Puntaje ★</p>
+
+            <form method="post">
+                @Html.HiddenFor(x => x.Calificacion!.Id)
+                <div>
+                    <button type="submit" asp-page-handler="BtBorrar" class="btn btn-danger">Confirmar Borrar</button>
+                    <button type="submit" asp-page-handler="BtCerrar" class="btn btn-secondary">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    }
+</div>

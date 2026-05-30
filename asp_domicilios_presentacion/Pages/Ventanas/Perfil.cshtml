@@ -1,0 +1,214 @@
+﻿@page
+@model asp_domicilios_presentacion.Pages.Ventanas.PerfilModel
+@{
+    ViewData["Title"] = "Mi Perfil";
+}
+
+<div class="container mt-5">
+    @if (ViewData["Mensaje"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show shadow-sm" role="alert">
+            <i class="bi bi-exclamation-circle-fill me-2"></i> @ViewData["Mensaje"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (ViewData["Exito"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show shadow-sm" role="alert">
+            <i class="bi bi-check-circle-fill me-2"></i> @ViewData["Exito"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="row bg-white p-4 rounded shadow-sm border">
+        <div class="col-md-4 mb-4 border-end">
+            <div class="text-center py-4">
+                <div class="mb-3 text-secondary">
+                    @if (Model.RolIdActual == 1)
+                    {
+                        <i class="bi bi-person-workspace text-danger" style="font-size: 5rem;"></i>
+                    }
+                    else if (Model.RolIdActual == 2)
+                    {
+                        <i class="bi bi-person-heart text-success" style="font-size: 5rem;"></i>
+                    }
+                    else if (Model.RolIdActual == 3)
+                    {
+                        <i class="bi bi-person-vcard text-warning" style="font-size: 5rem;"></i>
+                    }
+                    else
+                    {
+                        <i class="bi bi-person-circle" style="font-size: 5rem;"></i>
+                    }
+                </div>
+                <h4 class="fw-bold text-dark mb-1">@Model.UsuarioBase.Nombre</h4>
+                <p class="text-muted small font-monospace mb-3">@Model.UsuarioBase.Email</p>
+
+                <span class="badge px-3 py-2 text-uppercase font-monospace @(Model.RolIdActual == 1 ? "bg-danger" : Model.RolIdActual == 2 ? "bg-success" : "bg-warning text-dark")">
+                    @if (Model.RolIdActual == 1)
+                    {
+                        <text><i class="bi bi-shield-lock-fill"></i> Administrador</text>
+                    }
+                    else if (Model.RolIdActual == 2)
+                    {
+
+                        <text><i class="bi bi-bag-heart-fill"></i> Cliente</text>
+                    }
+                    else if (Model.RolIdActual == 3)
+                    {
+
+                        <text><i class="bi bi-truck"></i> Repartidor</text>
+                    }
+                    else
+                    {
+
+                        <text>Usuario General</text>
+                    }
+                </span>
+            </div>
+
+            <div class="mt-2">
+                <ul class="list-group list-group-flush small">
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0 py-3">
+                        <span class="text-muted"><i class="bi bi-hash"></i> Identificador ID:</span>
+                        <span class="fw-bold text-secondary">#@Model.UsuarioBase.Id</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0 py-3">
+                        <span class="text-muted"><i class="bi bi-calendar-event"></i> Nacimiento:</span>
+                        <span class="text-dark">@Model.UsuarioBase.FechaNacimiento.ToString("dd / MM / yyyy")</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-8 mb-4">
+            <div class="px-2">
+                <div class="mb-4">
+                    <h5 class="fw-bold text-dark"><i class="bi bi-sliders2-vertical text-primary me-2"></i>Configuración de Datos Personales</h5>
+                    <p class="text-muted small">Actualiza la información específica de tu cuenta.</p>
+                </div>
+
+                <form method="post" asp-page-handler="BtGuardarPerfil">
+
+                    <h6 class="text-uppercase text-secondary fw-bold small mb-3 border-bottom pb-2">
+                        <i class="bi bi-database-fill-gear"></i> Datos Base de Cuenta
+                    </h6>
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <label class="form-label small fw-bold text-dark">Documento de Cédula</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light"><i class="bi bi-card-text"></i></span>
+                                <input type="text" asp-for="UsuarioBase.Cedula" class="form-control" placeholder="Número de documento" required />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label small fw-bold text-dark">Nombre Completo</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light"><i class="bi bi-person"></i></span>
+                                <input type="text" asp-for="UsuarioBase.Nombre" class="form-control" placeholder="Nombres y Apellidos" required />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label small fw-bold text-dark">Correo Electrónico Oficial</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light"><i class="bi bi-envelope-at"></i></span>
+                                <input type="email" asp-for="UsuarioBase.Email" class="form-control" placeholder="correo@ejemplo.com" required />
+                            </div>
+                        </div>
+                    </div>
+
+                    @if (Model.RolIdActual == 2 && Model.DatosCliente != null)
+                    {
+                        <h6 class="text-uppercase text-success fw-bold small mb-3 border-bottom pb-2 mt-4">
+                            <i class="bi bi-house-door-fill"></i> Atributos Específicos de Cliente
+                        </h6>
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold text-dark">Dirección de Domicilio Habitual</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light"><i class="bi bi-geo-alt-fill text-success"></i></span>
+                                    <input type="text" asp-for="DatosCliente.Direccion" class="form-control" placeholder="Ej: Calle 45 #12-34" required />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold text-dark">Número de Teléfono / Celular</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light"><i class="bi bi-telephone-fill text-success"></i></span>
+                                    <input type="text" asp-for="DatosCliente.Telefono" class="form-control" placeholder="Ej: 3157654321" required />
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label small fw-bold text-dark">Método de Pago Predilecto</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light"><i class="bi bi-credit-card-2-back-fill text-success"></i></span>
+                                    <select asp-for="DatosCliente.MetodoPagoFav" class="form-select border-success fw-bold text-success" required>
+                                        <option value="">-- Elige tu método preferido de la lista --</option>
+                                        @if (Model.ListaMetodosPago != null)
+                                        {
+                                            foreach (var pago in Model.ListaMetodosPago)
+                                            {
+                                                <option value="@pago.Id">@pago.Nombre</option>
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    else if (Model.RolIdActual == 3 && Model.DatosRepartidor != null)
+                    {
+                        <h6 class="text-uppercase text-warning fw-bold small mb-3 border-bottom pb-2 mt-4 text-dark">
+                            <i class="bi bi-truck-flatbed"></i> Atributos Específicos de Repartidor
+                        </h6>
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold text-dark">Vehículo de Trabajo Asignado (Placa)</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light"><i class="bi bi-reception-4 text-warning"></i></span>
+                                    <select asp-for="DatosRepartidor.VehiculoId" class="form-select border-warning fw-bold" required>
+                                        <option value="">-- Selecciona la Placa --</option>
+                                        @if (Model.ListaVehiculos != null)
+                                        {
+                                            foreach (var vehiculo in Model.ListaVehiculos)
+                                            {
+                                                <option value="@vehiculo.Id">@vehiculo.Placa</option>
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold text-dark">Zona de Trabajo y Cobertura</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light"><i class="bi bi-map-fill text-warning"></i></span>
+                                    <select asp-for="DatosRepartidor.ZonaId" class="form-select border-warning fw-bold" required>
+                                        <option value="">-- Selecciona la Zona --</option>
+                                        @if (Model.ListaZonas != null)
+                                        {
+                                            foreach (var zona in Model.ListaZonas)
+                                            {
+                                                <option value="@zona.Id">@zona.Nombre</option>
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <div class="form-check form-switch p-3 bg-light rounded border border-warning-subtle">
+                                    <input class="form-check-input ms-0 me-2" type="checkbox" asp-for="DatosRepartidor.Disponible">
+                                    <label class="form-check-label fw-bold small text-dark">¿Activado y Disponible para recibir pedidos ahora mismo?</label>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                    <div class="text-end border-top pt-3 mt-4">
+                        <button type="submit" class="btn btn-primary fw-bold px-4 shadow-sm">
+                            <i class="bi bi-cloud-arrow-up-fill me-1"></i> Confirmar y Guardar Cambios
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
