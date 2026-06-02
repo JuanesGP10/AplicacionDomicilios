@@ -3,16 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\implementaciones\\rastreopedidonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\implementaciones\\rastreopedidonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\usuariosuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\usuariosuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\interfaces\\iconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\interfaces\\iconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\usuariosucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\usuariosucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{084E38F7-E143-4434-95A2-705FB43B0BDB}|asp_domicilios_presentacion\\asp_domicilios_presentacion.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\asp_domicilios_presentacion\\pages\\ventanas\\facturas.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{084E38F7-E143-4434-95A2-705FB43B0BDB}|asp_domicilios_presentacion\\asp_domicilios_presentacion.csproj|solutionrelative:asp_domicilios_presentacion\\pages\\ventanas\\facturas.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{084E38F7-E143-4434-95A2-705FB43B0BDB}|asp_domicilios_presentacion\\asp_domicilios_presentacion.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\asp_domicilios_presentacion\\pages\\ventanas\\pagos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{084E38F7-E143-4434-95A2-705FB43B0BDB}|asp_domicilios_presentacion\\asp_domicilios_presentacion.csproj|solutionrelative:asp_domicilios_presentacion\\pages\\ventanas\\pagos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\mst_unitarias.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\mst_unitarias.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360D8AE-FB7E-4432-B819-6A327E9E84B2}|lib_domicilios_presentacion\\lib_domicilios_presentacion.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_presentacion\\implementaciones\\usuariospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F360D8AE-FB7E-4432-B819-6A327E9E84B2}|lib_domicilios_presentacion\\lib_domicilios_presentacion.csproj|solutionrelative:lib_domicilios_presentacion\\implementaciones\\usuariospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360D8AE-FB7E-4432-B819-6A327E9E84B2}|lib_domicilios_presentacion\\lib_domicilios_presentacion.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_presentacion\\implementaciones\\detallepedidopresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F360D8AE-FB7E-4432-B819-6A327E9E84B2}|lib_domicilios_presentacion\\lib_domicilios_presentacion.csproj|solutionrelative:lib_domicilios_presentacion\\implementaciones\\detallepedidopresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360D8AE-FB7E-4432-B819-6A327E9E84B2}|lib_domicilios_presentacion\\lib_domicilios_presentacion.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_presentacion\\implementaciones\\comunicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F360D8AE-FB7E-4432-B819-6A327E9E84B2}|lib_domicilios_presentacion\\lib_domicilios_presentacion.csproj|solutionrelative:lib_domicilios_presentacion\\implementaciones\\comunicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\script.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
       "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\script.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{084E38F7-E143-4434-95A2-705FB43B0BDB}|asp_domicilios_presentacion\\asp_domicilios_presentacion.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\asp_domicilios_presentacion\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{084E38F7-E143-4434-95A2-705FB43B0BDB}|asp_domicilios_presentacion\\asp_domicilios_presentacion.csproj|solutionrelative:asp_domicilios_presentacion\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{084E38F7-E143-4434-95A2-705FB43B0BDB}|asp_domicilios_presentacion\\asp_domicilios_presentacion.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\asp_domicilios_presentacion\\pages\\ventanas\\facturas.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{084E38F7-E143-4434-95A2-705FB43B0BDB}|asp_domicilios_presentacion\\asp_domicilios_presentacion.csproj|solutionrelative:asp_domicilios_presentacion\\pages\\ventanas\\facturas.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{084E38F7-E143-4434-95A2-705FB43B0BDB}|asp_domicilios_presentacion\\asp_domicilios_presentacion.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\asp_domicilios_presentacion\\pages\\ventanas\\facturas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -25,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{084E38F7-E143-4434-95A2-705FB43B0BDB}|asp_domicilios_presentacion\\asp_domicilios_presentacion.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\asp_domicilios_presentacion\\pages\\ventanas\\pagos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{084E38F7-E143-4434-95A2-705FB43B0BDB}|asp_domicilios_presentacion\\asp_domicilios_presentacion.csproj|solutionrelative:asp_domicilios_presentacion\\pages\\ventanas\\pagos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{084E38F7-E143-4434-95A2-705FB43B0BDB}|asp_domicilios_presentacion\\asp_domicilios_presentacion.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\asp_domicilios_presentacion\\pages\\ventanas\\pagos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{084E38F7-E143-4434-95A2-705FB43B0BDB}|asp_domicilios_presentacion\\asp_domicilios_presentacion.csproj|solutionrelative:asp_domicilios_presentacion\\pages\\ventanas\\pagos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{084E38F7-E143-4434-95A2-705FB43B0BDB}|asp_domicilios_presentacion\\asp_domicilios_presentacion.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\asp_domicilios_presentacion\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -55,6 +87,136 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RastreoPedidoNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Implementaciones\\RastreoPedidoNegocio.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Implementaciones\\RastreoPedidoNegocio.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Implementaciones\\RastreoPedidoNegocio.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Implementaciones\\RastreoPedidoNegocio.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T20:58:58.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IConexion.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Interfaces\\IConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IConexion.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Interfaces\\IConexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T20:53:49.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuariosUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\UsuariosUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\UsuariosUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\UsuariosUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\UsuariosUConexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T20:51:40.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuariosUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\UsuariosUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\UsuariosUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\UsuariosUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\UsuariosUCom.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T20:41:25.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MST_Unitarias",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\MST_Unitarias.csproj",
+              "RelativeDocumentMoniker": "MST_Unitarias\\MST_Unitarias.csproj",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\MST_Unitarias.csproj",
+              "RelativeToolTip": "MST_Unitarias\\MST_Unitarias.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-02T20:35:05.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsuariosPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_presentacion\\Implementaciones\\UsuariosPresentacion.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_presentacion\\Implementaciones\\UsuariosPresentacion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_presentacion\\Implementaciones\\UsuariosPresentacion.cs",
+              "RelativeToolTip": "lib_domicilios_presentacion\\Implementaciones\\UsuariosPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T20:28:02.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DetallePedidoPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_presentacion\\Implementaciones\\DetallePedidoPresentacion.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_presentacion\\Implementaciones\\DetallePedidoPresentacion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_presentacion\\Implementaciones\\DetallePedidoPresentacion.cs",
+              "RelativeToolTip": "lib_domicilios_presentacion\\Implementaciones\\DetallePedidoPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T20:00:35.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Pagos.cshtml",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Ventanas\\Pagos.cshtml",
+              "RelativeDocumentMoniker": "asp_domicilios_presentacion\\Pages\\Ventanas\\Pagos.cshtml",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Ventanas\\Pagos.cshtml",
+              "RelativeToolTip": "asp_domicilios_presentacion\\Pages\\Ventanas\\Pagos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-30T02:20:48.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Facturas.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Ventanas\\Facturas.cshtml.cs",
+              "RelativeDocumentMoniker": "asp_domicilios_presentacion\\Pages\\Ventanas\\Facturas.cshtml.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Ventanas\\Facturas.cshtml.cs",
+              "RelativeToolTip": "asp_domicilios_presentacion\\Pages\\Ventanas\\Facturas.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T02:21:48.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Comunicaciones.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_presentacion\\Implementaciones\\Comunicaciones.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_presentacion\\Implementaciones\\Comunicaciones.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_presentacion\\Implementaciones\\Comunicaciones.cs",
+              "RelativeToolTip": "lib_domicilios_presentacion\\Implementaciones\\Comunicaciones.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T19:59:55.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Script.sql ",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Script.sql",
               "RelativeDocumentMoniker": "lib_domicilios_negocio\\Script.sql",
@@ -66,20 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Facturas.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Ventanas\\Facturas.cshtml.cs",
-              "RelativeDocumentMoniker": "asp_domicilios_presentacion\\Pages\\Ventanas\\Facturas.cshtml.cs",
-              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Ventanas\\Facturas.cshtml.cs",
-              "RelativeToolTip": "asp_domicilios_presentacion\\Pages\\Ventanas\\Facturas.cshtml.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T02:21:48.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "Facturas.cshtml",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Ventanas\\Facturas.cshtml",
               "RelativeDocumentMoniker": "asp_domicilios_presentacion\\Pages\\Ventanas\\Facturas.cshtml",
@@ -87,12 +236,11 @@
               "RelativeToolTip": "asp_domicilios_presentacion\\Pages\\Ventanas\\Facturas.cshtml",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-30T02:21:18.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T02:21:18.225Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "FacturasImpresion.cshtml",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Ventanas\\FacturasImpresion.cshtml",
               "RelativeDocumentMoniker": "asp_domicilios_presentacion\\Pages\\Ventanas\\FacturasImpresion.cshtml",
@@ -100,12 +248,11 @@
               "RelativeToolTip": "asp_domicilios_presentacion\\Pages\\Ventanas\\FacturasImpresion.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-30T02:21:17.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T02:21:17.401Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "Pagos.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Ventanas\\Pagos.cshtml.cs",
               "RelativeDocumentMoniker": "asp_domicilios_presentacion\\Pages\\Ventanas\\Pagos.cshtml.cs",
@@ -113,25 +260,11 @@
               "RelativeToolTip": "asp_domicilios_presentacion\\Pages\\Ventanas\\Pagos.cshtml.cs",
               "ViewState": "AgIAAHEAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T02:20:53.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T02:20:53.787Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Pagos.cshtml",
-              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Ventanas\\Pagos.cshtml",
-              "RelativeDocumentMoniker": "asp_domicilios_presentacion\\Pages\\Ventanas\\Pagos.cshtml",
-              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Ventanas\\Pagos.cshtml",
-              "RelativeToolTip": "asp_domicilios_presentacion\\Pages\\Ventanas\\Pagos.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-30T02:20:48.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "asp_domicilios_presentacion\\Pages\\Index.cshtml",
@@ -139,12 +272,11 @@
               "RelativeToolTip": "asp_domicilios_presentacion\\Pages\\Index.cshtml",
               "ViewState": "AgIAANUAAAAAAAAAAAAAAOgAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-30T02:16:15.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T02:16:15.426Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "asp_domicilios_presentacion\\Pages\\Shared\\_Layout.cshtml",
@@ -152,12 +284,11 @@
               "RelativeToolTip": "asp_domicilios_presentacion\\Pages\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAADYAAAAAAAAAAAAAAEUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-30T02:15:53.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T02:15:53.652Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "Mensajes.cshtml",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Emergentes\\Mensajes.cshtml",
               "RelativeDocumentMoniker": "asp_domicilios_presentacion\\Pages\\Emergentes\\Mensajes.cshtml",
@@ -165,8 +296,7 @@
               "RelativeToolTip": "asp_domicilios_presentacion\\Pages\\Emergentes\\Mensajes.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-30T02:03:23.217Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T02:03:23.217Z"
             }
           ]
         }

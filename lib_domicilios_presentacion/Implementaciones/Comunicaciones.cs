@@ -9,14 +9,11 @@ namespace lib_domicilios_presentacion.Implementaciones
         {
             try
             {
-                // 1. Extraer y quitar la URL para limpiar el diccionario
                 var url = datos["Url"].ToString() ?? "";
                 datos.Remove("Url");
 
-                // 2. DETECCIÓN AUTOMÁTICA DEL MÉTODO BASADO EN LA URL
-                // Convertimos a minúsculas la URL para evitar problemas de mayúsculas/minúsculas
                 string urlMinuscula = url.ToLower();
-                string metodo = "GET"; // Por defecto asumimos consulta
+                string metodo = "GET"; 
 
                 if (urlMinuscula.Contains("guardar"))
                 {
@@ -35,20 +32,18 @@ namespace lib_domicilios_presentacion.Implementaciones
                    metodo = "GET";
                 }
 
-                // 3. Serializar la entidad si existe
                 var stringData = datos.ContainsKey("Entidad") ?
                     JsonConvert.SerializeObject(datos["Entidad"]) : "{}";
 
                 var body = new StringContent(stringData, Encoding.UTF8, "application/json");
                 var handler = new HttpClientHandler();
                 handler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => { return true; };
-                // 4. Configurar el cliente HTTP
+
                 var httpClient = new HttpClient(handler);
                 httpClient.Timeout = new TimeSpan(0, 4, 0);
 
                 HttpResponseMessage message;
 
-                // 5. DISPARAR LA PETICIÓN SEGÚN EL MÉTODO DETECTADO
                 switch (metodo)
                 {
                     case "POST":
@@ -70,7 +65,6 @@ namespace lib_domicilios_presentacion.Implementaciones
                         break;
                 }
 
-                // 6. Validar respuesta del servidor
                 if (!message.IsSuccessStatusCode)
                 {
                     var errorContent = await message.Content.ReadAsStringAsync();

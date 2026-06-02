@@ -151,8 +151,8 @@ C:\Users\WIN\source\repos\SolutionProyectoFinal\asp_domicilios_presentacion\obj\
 C:\Users\WIN\source\repos\SolutionProyectoFinal\asp_domicilios_presentacion\obj\Debug\net9.0\ref\asp_domicilios_presentacion.dll
 C:\Users\WIN\Desktop\AplicacionDomicilios\asp_domicilios_presentacion\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\WIN\Desktop\AplicacionDomicilios\asp_domicilios_presentacion\bin\Debug\net9.0\appsettings.json
-C:\Users\WIN\Desktop\AplicacionDomicilios\asp_domicilios_presentacion\bin\Debug\net9.0\asp_domicilios_presentacion.staticwebassets.endpoints.json
 C:\Users\WIN\Desktop\AplicacionDomicilios\asp_domicilios_presentacion\bin\Debug\net9.0\asp_domicilios_presentacion.staticwebassets.runtime.json
+C:\Users\WIN\Desktop\AplicacionDomicilios\asp_domicilios_presentacion\bin\Debug\net9.0\asp_domicilios_presentacion.staticwebassets.endpoints.json
 C:\Users\WIN\Desktop\AplicacionDomicilios\asp_domicilios_presentacion\bin\Debug\net9.0\asp_domicilios_presentacion.exe
 C:\Users\WIN\Desktop\AplicacionDomicilios\asp_domicilios_presentacion\bin\Debug\net9.0\asp_domicilios_presentacion.deps.json
 C:\Users\WIN\Desktop\AplicacionDomicilios\asp_domicilios_presentacion\bin\Debug\net9.0\asp_domicilios_presentacion.runtimeconfig.json
