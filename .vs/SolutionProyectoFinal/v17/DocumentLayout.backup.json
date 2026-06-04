@@ -3,16 +3,304 @@
   "WorkspaceRootPath": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\usuariosuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\usuariosuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\clientesucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\clientesucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\interfaces\\iconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\interfaces\\iconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\repartidoresucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\repartidoresucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\usuariosucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\usuariosucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\modelos\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\modelos\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\modelos\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\modelos\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\rastreorepartidorucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\rastreorepartidorucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\vehiculosucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\vehiculosucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360D8AE-FB7E-4432-B819-6A327E9E84B2}|lib_domicilios_presentacion\\lib_domicilios_presentacion.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_presentacion\\implementaciones\\comunicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F360D8AE-FB7E-4432-B819-6A327E9E84B2}|lib_domicilios_presentacion\\lib_domicilios_presentacion.csproj|solutionrelative:lib_domicilios_presentacion\\implementaciones\\comunicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\modelos\\vehiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\modelos\\vehiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\interfaces\\ivehiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\interfaces\\ivehiculos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\modelos\\zonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\modelos\\zonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\implementaciones\\vehiculosnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\implementaciones\\vehiculosnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0B9224-5B07-4B8D-B735-9BE98AC83860}|Asp_domicilios_negocio\\Asp_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\asp_domicilios_negocio\\controllers\\vehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0B9224-5B07-4B8D-B735-9BE98AC83860}|Asp_domicilios_negocio\\Asp_domicilios_negocio.csproj|solutionrelative:asp_domicilios_negocio\\controllers\\vehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\pedidosucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\pedidosucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\script.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\script.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360D8AE-FB7E-4432-B819-6A327E9E84B2}|lib_domicilios_presentacion\\lib_domicilios_presentacion.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_presentacion\\implementaciones\\vehiculospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F360D8AE-FB7E-4432-B819-6A327E9E84B2}|lib_domicilios_presentacion\\lib_domicilios_presentacion.csproj|solutionrelative:lib_domicilios_presentacion\\implementaciones\\vehiculospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360D8AE-FB7E-4432-B819-6A327E9E84B2}|lib_domicilios_presentacion\\lib_domicilios_presentacion.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_presentacion\\interfaces\\ivehiculospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F360D8AE-FB7E-4432-B819-6A327E9E84B2}|lib_domicilios_presentacion\\lib_domicilios_presentacion.csproj|solutionrelative:lib_domicilios_presentacion\\interfaces\\ivehiculospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\facturasucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\facturasucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\metodopagoucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\metodopagoucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\categoriasucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\categoriasucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\estadopedidoucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\estadopedidoucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\modelos\\estadopedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\modelos\\estadopedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\categoriasuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\categoriasuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\modelos\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\modelos\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\notificacionesucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\notificacionesucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\productosucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\productosucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\historicosucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\historicosucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\pagosucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\pagosucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\rastreopedidoucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\rastreopedidoucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\rolesucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\rolesucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\zonasucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\zonasucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\detallepedidoucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\detallepedidoucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\estadopagoucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\estadopagoucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\rutaentregaucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\rutaentregaucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\comunicacionesunitarias\\calificacionesucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\comunicacionesunitarias\\calificacionesucom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\implementaciones\\metodopagonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\implementaciones\\metodopagonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360D8AE-FB7E-4432-B819-6A327E9E84B2}|lib_domicilios_presentacion\\lib_domicilios_presentacion.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_presentacion\\implementaciones\\metodopagopresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F360D8AE-FB7E-4432-B819-6A327E9E84B2}|lib_domicilios_presentacion\\lib_domicilios_presentacion.csproj|solutionrelative:lib_domicilios_presentacion\\implementaciones\\metodopagopresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0B9224-5B07-4B8D-B735-9BE98AC83860}|Asp_domicilios_negocio\\Asp_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\asp_domicilios_negocio\\controllers\\metodopagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0B9224-5B07-4B8D-B735-9BE98AC83860}|Asp_domicilios_negocio\\Asp_domicilios_negocio.csproj|solutionrelative:asp_domicilios_negocio\\controllers\\metodopagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\interfaces\\ipagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\interfaces\\ipagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\interfaces\\ipedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\interfaces\\ipedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\interfaces\\ifacturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\interfaces\\ifacturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\interfaces\\idetallepedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\interfaces\\idetallepedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\interfaces\\irepartidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\interfaces\\irepartidores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\interfaces\\iproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\interfaces\\iproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\rastreorepartidoruconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\rastreorepartidoruconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\rastreopedidouconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\rastreopedidouconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\rutaentregauconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\rutaentregauconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\calificacionesuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\calificacionesuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\modelos\\calificaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\modelos\\calificaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\modelos\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\modelos\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\productosuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\productosuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\facturasuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\facturasuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\pagosuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\pagosuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\detallepedidouconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\detallepedidouconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\pedidosuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\pedidosuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\interfaces\\icalificaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\interfaces\\icalificaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\interfaces\\iestadopedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\interfaces\\iestadopedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\interfaces\\iestadopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\interfaces\\iestadopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\interfaces\\inotificaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\interfaces\\inotificaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\estadopagouconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\estadopagouconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\notificacionesuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\notificacionesuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\interfaces\\iroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\interfaces\\iroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\modelos\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\modelos\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\rolesuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\rolesuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\estadopedidouconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\estadopedidouconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\metodopagouconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\metodopagouconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\clientesuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\clientesuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\zonasuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\zonasuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\interfaces\\izonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\interfaces\\izonas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\vehiculosuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\vehiculosuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\historicosuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\historicosuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\repartidoresuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\repartidoresuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\mst_unitarias\\conexionunitarias\\usuariosuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F03EA5B-4943-4BC5-A3CE-4CDC82964F86}|MST_Unitarias\\MST_Unitarias.csproj|solutionrelative:mst_unitarias\\conexionunitarias\\usuariosuconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\implementaciones\\rastreopedidonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\implementaciones\\rastreopedidonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\interfaces\\iconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\interfaces\\iconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{084E38F7-E143-4434-95A2-705FB43B0BDB}|asp_domicilios_presentacion\\asp_domicilios_presentacion.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\asp_domicilios_presentacion\\pages\\ventanas\\facturas.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,14 +321,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F360D8AE-FB7E-4432-B819-6A327E9E84B2}|lib_domicilios_presentacion\\lib_domicilios_presentacion.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_presentacion\\implementaciones\\detallepedidopresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F360D8AE-FB7E-4432-B819-6A327E9E84B2}|lib_domicilios_presentacion\\lib_domicilios_presentacion.csproj|solutionrelative:lib_domicilios_presentacion\\implementaciones\\detallepedidopresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F360D8AE-FB7E-4432-B819-6A327E9E84B2}|lib_domicilios_presentacion\\lib_domicilios_presentacion.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_presentacion\\implementaciones\\comunicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F360D8AE-FB7E-4432-B819-6A327E9E84B2}|lib_domicilios_presentacion\\lib_domicilios_presentacion.csproj|solutionrelative:lib_domicilios_presentacion\\implementaciones\\comunicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\lib_domicilios_negocio\\script.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{EA9ACFF0-B5D3-4C3D-8CA0-42FC0C290165}|lib_domicilios_negocio\\lib_domicilios_negocio.csproj|solutionrelative:lib_domicilios_negocio\\script.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{084E38F7-E143-4434-95A2-705FB43B0BDB}|asp_domicilios_presentacion\\asp_domicilios_presentacion.csproj|c:\\users\\win\\desktop\\aplicaciondomicilios\\asp_domicilios_presentacion\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -78,11 +358,963 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RastreoRepartidorUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\RastreoRepartidorUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\RastreoRepartidorUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\RastreoRepartidorUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\RastreoRepartidorUCom.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAArwDUAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:28:37.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Modelos\\Usuarios.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Modelos\\Usuarios.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Modelos\\Usuarios.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Modelos\\Usuarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T05:10:08.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Clientes.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Modelos\\Clientes.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Modelos\\Clientes.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Modelos\\Clientes.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Modelos\\Clientes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T05:09:03.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientesUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\ClientesUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\ClientesUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\ClientesUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\ClientesUCom.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T00:22:49.582Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "RepartidoresUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\RepartidoresUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\RepartidoresUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\RepartidoresUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\RepartidoresUCom.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAkwEoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T00:38:38.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuariosUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\UsuariosUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\UsuariosUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\UsuariosUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\UsuariosUCom.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAkwE4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T20:41:25.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VehiculosUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\VehiculosUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\VehiculosUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\VehiculosUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\VehiculosUCom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T00:59:47.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Comunicaciones.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_presentacion\\Implementaciones\\Comunicaciones.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_presentacion\\Implementaciones\\Comunicaciones.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_presentacion\\Implementaciones\\Comunicaciones.cs",
+              "RelativeToolTip": "lib_domicilios_presentacion\\Implementaciones\\Comunicaciones.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAApwFQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T05:53:16.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Zonas.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Modelos\\Zonas.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Modelos\\Zonas.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Modelos\\Zonas.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Modelos\\Zonas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T01:29:36.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Vehiculos.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Modelos\\Vehiculos.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Modelos\\Vehiculos.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Modelos\\Vehiculos.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Modelos\\Vehiculos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T01:25:54.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IVehiculos.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IVehiculos.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Interfaces\\IVehiculos.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IVehiculos.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Interfaces\\IVehiculos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T01:03:13.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "VehiculosNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Implementaciones\\VehiculosNegocio.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Implementaciones\\VehiculosNegocio.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Implementaciones\\VehiculosNegocio.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Implementaciones\\VehiculosNegocio.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T05:59:26.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "VehiculosController.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\Asp_domicilios_negocio\\Controllers\\VehiculosController.cs",
+              "RelativeDocumentMoniker": "Asp_domicilios_negocio\\Controllers\\VehiculosController.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\Asp_domicilios_negocio\\Controllers\\VehiculosController.cs",
+              "RelativeToolTip": "Asp_domicilios_negocio\\Controllers\\VehiculosController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T06:18:40.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PedidosUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\PedidosUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\PedidosUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\PedidosUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\PedidosUCom.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwDUAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:40:10.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Script.sql ",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Script.sql",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Script.sql",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Script.sql",
+              "RelativeToolTip": "lib_domicilios_negocio\\Script.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-05-30T02:32:15.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IVehiculosPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_presentacion\\Interfaces\\IVehiculosPresentacion.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_presentacion\\Interfaces\\IVehiculosPresentacion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_presentacion\\Interfaces\\IVehiculosPresentacion.cs",
+              "RelativeToolTip": "lib_domicilios_presentacion\\Interfaces\\IVehiculosPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T06:19:10.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "VehiculosPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_presentacion\\Implementaciones\\VehiculosPresentacion.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_presentacion\\Implementaciones\\VehiculosPresentacion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_presentacion\\Implementaciones\\VehiculosPresentacion.cs",
+              "RelativeToolTip": "lib_domicilios_presentacion\\Implementaciones\\VehiculosPresentacion.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T05:59:44.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MetodoPagoUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\MetodoPagoUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\MetodoPagoUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\MetodoPagoUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\MetodoPagoUCom.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAYwCYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:01:39.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FacturasUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\FacturasUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\FacturasUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\FacturasUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\FacturasUCom.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAYwCkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:51:16.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EstadoPedidoUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\EstadoPedidoUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\EstadoPedidoUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\EstadoPedidoUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\EstadoPedidoUCom.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAiwDUAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:12:42.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CategoriasUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\CategoriasUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\CategoriasUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\CategoriasUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\CategoriasUCom.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwDUAAACZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:19:27.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "EstadoPedido.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Modelos\\EstadoPedido.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Modelos\\EstadoPedido.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Modelos\\EstadoPedido.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Modelos\\EstadoPedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T05:05:29.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CategoriasUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\CategoriasUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\CategoriasUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\CategoriasUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\CategoriasUConexion.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:18:19.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Categorias.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Modelos\\Categorias.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Modelos\\Categorias.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Modelos\\Categorias.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Modelos\\Categorias.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T05:00:31.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "NotificacionesUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\NotificacionesUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\NotificacionesUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\NotificacionesUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\NotificacionesUCom.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAYwCYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:27:28.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ProductosUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\ProductosUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\ProductosUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\ProductosUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\ProductosUCom.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAYwCcAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:54:30.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "HistoricosUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\HistoricosUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\HistoricosUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\HistoricosUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\HistoricosUCom.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T00:45:26.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PagosUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\PagosUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\PagosUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\PagosUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\PagosUCom.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:47:44.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "RastreoPedidoUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\RastreoPedidoUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\RastreoPedidoUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\RastreoPedidoUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\RastreoPedidoUCom.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:25:28.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "RolesUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\RolesUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\RolesUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\RolesUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\RolesUCom.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:22:37.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ZonasUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\ZonasUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\ZonasUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\ZonasUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\ZonasUCom.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAkwD8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T01:22:54.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "DetallePedidoUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\DetallePedidoUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\DetallePedidoUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\DetallePedidoUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\DetallePedidoUCom.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:43:11.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "EstadoPagoUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\EstadoPagoUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\EstadoPagoUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\EstadoPagoUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\EstadoPagoUCom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:34:53.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "RutaEntregaUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\RutaEntregaUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\RutaEntregaUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\RutaEntregaUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\RutaEntregaUCom.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowEYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:22:22.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CalificacionesUCom.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\CalificacionesUCom.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\CalificacionesUCom.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\CalificacionesUCom.cs",
+              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\CalificacionesUCom.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAkwD0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:07:41.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "MetodoPagoNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Implementaciones\\MetodoPagoNegocio.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Implementaciones\\MetodoPagoNegocio.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Implementaciones\\MetodoPagoNegocio.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Implementaciones\\MetodoPagoNegocio.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T04:00:33.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "MetodoPagoPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_presentacion\\Implementaciones\\MetodoPagoPresentacion.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_presentacion\\Implementaciones\\MetodoPagoPresentacion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_presentacion\\Implementaciones\\MetodoPagoPresentacion.cs",
+              "RelativeToolTip": "lib_domicilios_presentacion\\Implementaciones\\MetodoPagoPresentacion.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAcwFkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:57:25.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "MetodoPagoController.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\Asp_domicilios_negocio\\Controllers\\MetodoPagoController.cs",
+              "RelativeDocumentMoniker": "Asp_domicilios_negocio\\Controllers\\MetodoPagoController.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\Asp_domicilios_negocio\\Controllers\\MetodoPagoController.cs",
+              "RelativeToolTip": "Asp_domicilios_negocio\\Controllers\\MetodoPagoController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwDkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:58:19.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "IRepartidores.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IRepartidores.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Interfaces\\IRepartidores.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IRepartidores.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Interfaces\\IRepartidores.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:29:41.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IDetallePedido.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IDetallePedido.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Interfaces\\IDetallePedido.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IDetallePedido.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Interfaces\\IDetallePedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:29:55.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IProductos.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IProductos.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Interfaces\\IProductos.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IProductos.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Interfaces\\IProductos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:29:38.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IPedidos.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IPedidos.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Interfaces\\IPedidos.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IPedidos.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Interfaces\\IPedidos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:29:32.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IFacturas.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IFacturas.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Interfaces\\IFacturas.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IFacturas.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Interfaces\\IFacturas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:30:06.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IPagos.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IPagos.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Interfaces\\IPagos.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IPagos.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Interfaces\\IPagos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:30:18.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "RastreoRepartidorUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\RastreoRepartidorUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\RastreoRepartidorUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\RastreoRepartidorUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\RastreoRepartidorUConexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:27:06.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "RastreoPedidoUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\RastreoPedidoUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\RastreoPedidoUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\RastreoPedidoUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\RastreoPedidoUConexion.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwBYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:24:17.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "RutaEntregaUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\RutaEntregaUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\RutaEntregaUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\RutaEntregaUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\RutaEntregaUConexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:21:06.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "CalificacionesUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\CalificacionesUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\CalificacionesUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\CalificacionesUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\CalificacionesUConexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAYwA0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T03:00:14.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Productos.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Modelos\\Productos.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Modelos\\Productos.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Modelos\\Productos.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Modelos\\Productos.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:52:35.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ProductosUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\ProductosUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\ProductosUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\ProductosUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\ProductosUConexion.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwBIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:53:31.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Calificaciones.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Modelos\\Calificaciones.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Modelos\\Calificaciones.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Modelos\\Calificaciones.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Modelos\\Calificaciones.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:37:13.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "FacturasUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\FacturasUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\FacturasUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\FacturasUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\FacturasUConexion.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:49:31.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "PagosUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\PagosUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\PagosUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\PagosUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\PagosUConexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:46:49.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "DetallePedidoUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\DetallePedidoUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\DetallePedidoUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\DetallePedidoUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\DetallePedidoUConexion.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:42:13.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "PedidosUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\PedidosUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\PedidosUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\PedidosUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\PedidosUConexion.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:39:20.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ICalificaciones.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\ICalificaciones.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Interfaces\\ICalificaciones.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\ICalificaciones.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Interfaces\\ICalificaciones.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:37:09.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "INotificaciones.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\INotificaciones.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Interfaces\\INotificaciones.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\INotificaciones.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Interfaces\\INotificaciones.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:36:40.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "EstadoPagoUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\EstadoPagoUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\EstadoPagoUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\EstadoPagoUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\EstadoPagoUConexion.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:33:53.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "IEstadoPago.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IEstadoPago.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Interfaces\\IEstadoPago.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IEstadoPago.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Interfaces\\IEstadoPago.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:13:14.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "IEstadoPedido.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IEstadoPedido.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Interfaces\\IEstadoPedido.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IEstadoPedido.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Interfaces\\IEstadoPedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:13:17.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "NotificacionesUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\NotificacionesUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\NotificacionesUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\NotificacionesUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\NotificacionesUConexion.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:26:26.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "IRoles.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IRoles.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Interfaces\\IRoles.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IRoles.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Interfaces\\IRoles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:23:31.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Modelos\\Roles.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Modelos\\Roles.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Modelos\\Roles.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Modelos\\Roles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:21:11.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "RolesUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\RolesUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\RolesUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\RolesUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\RolesUConexion.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:21:45.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "EstadoPedidoUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\EstadoPedidoUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\EstadoPedidoUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\EstadoPedidoUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\EstadoPedidoUConexion.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:02:33.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "MetodoPagoUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\MetodoPagoUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\MetodoPagoUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\MetodoPagoUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\MetodoPagoUConexion.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T02:00:43.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "ClientesUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\ClientesUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\ClientesUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\ClientesUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\ClientesUConexion.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T00:19:21.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "ZonasUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\ZonasUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\ZonasUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\ZonasUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\ZonasUConexion.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T01:18:44.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "IZonas.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IZonas.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Interfaces\\IZonas.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IZonas.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Interfaces\\IZonas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T01:24:50.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "VehiculosUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\VehiculosUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\VehiculosUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\VehiculosUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\VehiculosUConexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T00:55:36.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "HistoricosUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\HistoricosUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\HistoricosUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\HistoricosUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\HistoricosUConexion.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T00:49:28.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "RepartidoresUConexion.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\RepartidoresUConexion.cs",
+              "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\RepartidoresUConexion.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\RepartidoresUConexion.cs",
+              "RelativeToolTip": "MST_Unitarias\\ConexionUnitarias\\RepartidoresUConexion.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T00:42:04.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "RastreoPedidoNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Implementaciones\\RastreoPedidoNegocio.cs",
+              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Implementaciones\\RastreoPedidoNegocio.cs",
+              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Implementaciones\\RastreoPedidoNegocio.cs",
+              "RelativeToolTip": "lib_domicilios_negocio\\Implementaciones\\RastreoPedidoNegocio.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T20:58:58.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
               "Title": "IConexion.cs",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Interfaces\\IConexion.cs",
               "RelativeDocumentMoniker": "lib_domicilios_negocio\\Interfaces\\IConexion.cs",
@@ -90,12 +1322,11 @@
               "RelativeToolTip": "lib_domicilios_negocio\\Interfaces\\IConexion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T20:53:49.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-02T20:53:49.793Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 72,
               "Title": "UsuariosUConexion.cs",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ConexionUnitarias\\UsuariosUConexion.cs",
               "RelativeDocumentMoniker": "MST_Unitarias\\ConexionUnitarias\\UsuariosUConexion.cs",
@@ -108,21 +1339,8 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsuariosUCom.cs",
-              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\UsuariosUCom.cs",
-              "RelativeDocumentMoniker": "MST_Unitarias\\ComunicacionesUnitarias\\UsuariosUCom.cs",
-              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\ComunicacionesUnitarias\\UsuariosUCom.cs",
-              "RelativeToolTip": "MST_Unitarias\\ComunicacionesUnitarias\\UsuariosUCom.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T20:41:25.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MST_Unitarias",
+              "DocumentIndex": 77,
+              "Title": "MST_Unitarias.csproj",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\MST_Unitarias.csproj",
               "RelativeDocumentMoniker": "MST_Unitarias\\MST_Unitarias.csproj",
               "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\MST_Unitarias\\MST_Unitarias.csproj",
@@ -134,7 +1352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 78,
               "Title": "UsuariosPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_presentacion\\Implementaciones\\UsuariosPresentacion.cs",
               "RelativeDocumentMoniker": "lib_domicilios_presentacion\\Implementaciones\\UsuariosPresentacion.cs",
@@ -142,12 +1360,11 @@
               "RelativeToolTip": "lib_domicilios_presentacion\\Implementaciones\\UsuariosPresentacion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T20:28:02.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-02T20:28:02.941Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 79,
               "Title": "DetallePedidoPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_presentacion\\Implementaciones\\DetallePedidoPresentacion.cs",
               "RelativeDocumentMoniker": "lib_domicilios_presentacion\\Implementaciones\\DetallePedidoPresentacion.cs",
@@ -155,12 +1372,11 @@
               "RelativeToolTip": "lib_domicilios_presentacion\\Implementaciones\\DetallePedidoPresentacion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T20:00:35.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-02T20:00:35.332Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 76,
               "Title": "Pagos.cshtml",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Ventanas\\Pagos.cshtml",
               "RelativeDocumentMoniker": "asp_domicilios_presentacion\\Pages\\Ventanas\\Pagos.cshtml",
@@ -168,12 +1384,11 @@
               "RelativeToolTip": "asp_domicilios_presentacion\\Pages\\Ventanas\\Pagos.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-30T02:20:48.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T02:20:48.92Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 75,
               "Title": "Facturas.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Ventanas\\Facturas.cshtml.cs",
               "RelativeDocumentMoniker": "asp_domicilios_presentacion\\Pages\\Ventanas\\Facturas.cshtml.cs",
@@ -181,37 +1396,11 @@
               "RelativeToolTip": "asp_domicilios_presentacion\\Pages\\Ventanas\\Facturas.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T02:21:48.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T02:21:48.629Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Comunicaciones.cs",
-              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_presentacion\\Implementaciones\\Comunicaciones.cs",
-              "RelativeDocumentMoniker": "lib_domicilios_presentacion\\Implementaciones\\Comunicaciones.cs",
-              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_presentacion\\Implementaciones\\Comunicaciones.cs",
-              "RelativeToolTip": "lib_domicilios_presentacion\\Implementaciones\\Comunicaciones.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwEIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T19:59:55.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Script.sql ",
-              "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Script.sql",
-              "RelativeDocumentMoniker": "lib_domicilios_negocio\\Script.sql",
-              "ToolTip": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\lib_domicilios_negocio\\Script.sql",
-              "RelativeToolTip": "lib_domicilios_negocio\\Script.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-05-30T02:32:15.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 81,
               "Title": "Facturas.cshtml",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Ventanas\\Facturas.cshtml",
               "RelativeDocumentMoniker": "asp_domicilios_presentacion\\Pages\\Ventanas\\Facturas.cshtml",
@@ -223,7 +1412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 82,
               "Title": "FacturasImpresion.cshtml",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Ventanas\\FacturasImpresion.cshtml",
               "RelativeDocumentMoniker": "asp_domicilios_presentacion\\Pages\\Ventanas\\FacturasImpresion.cshtml",
@@ -235,7 +1424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 83,
               "Title": "Pagos.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Ventanas\\Pagos.cshtml.cs",
               "RelativeDocumentMoniker": "asp_domicilios_presentacion\\Pages\\Ventanas\\Pagos.cshtml.cs",
@@ -247,7 +1436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 80,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "asp_domicilios_presentacion\\Pages\\Index.cshtml",
@@ -259,7 +1448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 84,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "asp_domicilios_presentacion\\Pages\\Shared\\_Layout.cshtml",
@@ -271,7 +1460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 85,
               "Title": "Mensajes.cshtml",
               "DocumentMoniker": "C:\\Users\\WIN\\Desktop\\AplicacionDomicilios\\asp_domicilios_presentacion\\Pages\\Emergentes\\Mensajes.cshtml",
               "RelativeDocumentMoniker": "asp_domicilios_presentacion\\Pages\\Emergentes\\Mensajes.cshtml",

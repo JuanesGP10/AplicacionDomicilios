@@ -1,4 +1,6 @@
-﻿using lib_domicilios_presentacion.Implementaciones;
+﻿using lib_domicilios_negocio.Modelos;
+using lib_domicilios_presentacion.Implementaciones;
+using Newtonsoft.Json;
 
 namespace MST_Unitarias.ComunicacionesUnitarias
 {
@@ -11,7 +13,6 @@ namespace MST_Unitarias.ComunicacionesUnitarias
         public async Task Verificar_Usuarios_GET()
         {
             Comunicaciones comunicaciones = new Comunicaciones();
-
             Dictionary<string, object> datos = new Dictionary<string, object>
             {
                 { "Url", $"{urlBase}/consultar" }
@@ -26,60 +27,59 @@ namespace MST_Unitarias.ComunicacionesUnitarias
         }
 
         [TestMethod]
-        public async Task Verificar_Usuarios_POST()
+        public async Task Ciclo_POST_PUT_DELETE_Usuarios()
         {
             Comunicaciones comunicaciones = new Comunicaciones();
 
-            Dictionary<string, object> datos = new Dictionary<string, object>
+            // 1. POST: Crear un nuevo usuario
+            // Nota: Asegúrate de que el Rol (ej: 1 o 2) exista en tu tabla Roles
+            var datosPost = new Dictionary<string, object>
             {
                 { "Url", $"{urlBase}/guardar" },
-                { "Entidad", new { Id = 0, Nombre = "Diego Zapata", RolId = 2 } }
+                { "Entidad", new {
+                    Id = 0,
+                    Cedula = "555666777",
+                    Nombre = "Usuario Prueba",
+                    Email = "usuario.test@domicilios.com",
+                    Contrasena = "Usuario123*",
+                    FechaNacimiento = new DateTime(1998, 10, 10),
+                    Rol = 1 // Verifica que este ID de Rol sea válido en tu BD
+                } }
             };
 
-            var resultado = await comunicaciones.Ejecutar(datos);
+            var resultadoPost = await comunicaciones.Ejecutar(datosPost);
+            Assert.IsNotNull(resultadoPost);
 
-            if (resultado != null && resultado.ContainsKey("valor"))
-                return;
+            // Deserializamos para obtener el ID recién generado
+            string jsonObjetoCreado = resultadoPost["valor"].ToString();
+            var usuarioCreado = JsonConvert.DeserializeObject<Usuarios>(jsonObjetoCreado);
+            int IdGenerado = usuarioCreado.Id;
+            Assert.IsTrue(IdGenerado > 0);
 
-            throw new Exception("El método POST (guardar) para Usuarios no retornó la estructura esperada.");
-        }
-
-        [TestMethod]
-        public async Task Verificar_Usuarios_PUT()
-        {
-            Comunicaciones comunicaciones = new Comunicaciones();
-
-            Dictionary<string, object> datos = new Dictionary<string, object>
+            // 2. PUT: Modificar el usuario creado
+            var datosPut = new Dictionary<string, object>
             {
                 { "Url", $"{urlBase}/modificar" },
-                { "Entidad", new { Id = 1, Nombre = "Diego Zapata Modificado", RolId = 2 } }
+                { "Entidad", new {
+                    Id = IdGenerado,
+                    Cedula = "555666777",
+                    Nombre = "Usuario Editado",
+                    Email = "usuario.test@domicilios.com",
+                    Contrasena = "Usuario123*",
+                    FechaNacimiento = new DateTime(1998, 10, 10),
+                    Rol = 1
+                } }
             };
+            await comunicaciones.Ejecutar(datosPut);
 
-            var resultado = await comunicaciones.Ejecutar(datos);
-
-            if (resultado != null && resultado.ContainsKey("valor"))
-                return;
-
-            throw new Exception("El método PUT (modificar) para Usuarios no retornó la estructura esperada.");
-        }
-
-        [TestMethod]
-        public async Task Verificar_Usuarios_DELETE()
-        {
-            Comunicaciones comunicaciones = new Comunicaciones();
-
-            Dictionary<string, object> datos = new Dictionary<string, object>
+            // 3. DELETE: Borrar el usuario
+            var datosDelete = new Dictionary<string, object>
             {
-                { "Url", $"{urlBase}/borrar" },
-                { "Entidad", new { Id = 1 } }
+                { "Url", $"{urlBase}/borrar?id={IdGenerado}" }
             };
-
-            var resultado = await comunicaciones.Ejecutar(datos);
-
-            if (resultado != null && resultado.ContainsKey("valor"))
-                return;
-
-            throw new Exception("El método DELETE (borrar) para Usuarios no retornó la estructura esperada.");
+            var resultadoDelete = await comunicaciones.Ejecutar(datosDelete);
+            Assert.IsNotNull(resultadoDelete);
+            Assert.IsTrue(resultadoDelete.ContainsKey("valor"));
         }
     }
 }
