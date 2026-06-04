@@ -29,28 +29,23 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
         public IActionResult OnGet(int id)
         {
-            // 1. Consultar la factura
             var fact = _facturasPresentacion.ConsultarPorIdAsync(id).GetAwaiter().GetResult();
             if (fact == null) return RedirectToPage("./Facturas");
             Factura = fact;
 
-            // 2. ⚡ TRAER NOMBRE Y CÉDULA DEL CLIENTE
             var pedido = _pedidosPresentacion.ConsultarPorIdAsync(Factura.PedidoId).GetAwaiter().GetResult();
             if (pedido != null)
             {
-                // Buscamos el usuario dueño del pedido usando el ClienteId o UsuarioId
                 int idCliente = pedido.ClienteId > 0 ? pedido.ClienteId : pedido.ClienteId;
                 var cliente = _usuariosPresentacion.ConsultarPorIdAsync(idCliente).GetAwaiter().GetResult();
 
                 if (cliente != null)
                 {
-                    // Ajusta estas propiedades según los nombres exactos en tu modelo (ej: Nombre Completo, Cedula, Documento)
                     NombreCliente = cliente.Nombre;
                     CedulaCliente = cliente.Cedula;
                 }
             }
 
-            // 3. Traer ítems comprados y nombres de productos
             var todosLosDetalles = _detallePedidoPresentacion.ConsultarAsync().GetAwaiter().GetResult() ?? new List<DetallePedido>();
             var todosLosProductos = _productosPresentacion.ConsultarAsync().GetAwaiter().GetResult() ?? new List<Productos>();
 

@@ -16,19 +16,16 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
         public DetallePedidoModel()
         {
-            // Inicialización manual directa respetando tu arquitectura
             _detallePedidoPresentacion = new DetallePedidoPresentacion();
         }
 
         public int ObtenerRolUsuario()
         {
-            // Se lee el atributo Rol almacenado en la sesión
             return HttpContext.Session.GetInt32("Rol") ?? 0;
         }
 
         public void OnGet()
         {
-            // Candado global de autenticación
             var variable_session = HttpContext.Session.GetString("Usuario");
             if (String.IsNullOrEmpty(variable_session))
             {
@@ -102,7 +99,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
                 if (Detalle == null) return;
 
-                // Método unificado de guardado (Insert / Update)
                 Detalle = _detallePedidoPresentacion.GuardarAsync(Detalle).GetAwaiter().GetResult();
 
                 OnPostBtRefrescar();

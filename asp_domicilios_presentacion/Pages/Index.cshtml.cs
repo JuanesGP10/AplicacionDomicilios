@@ -23,13 +23,9 @@ namespace asp_domicilios_presentacion.Pages
         [BindProperty] public string? Cedula { get; set; }
         [BindProperty] public DateTime FechaNacimiento { get; set; } = DateTime.Today;
         [BindProperty] public string? TipoRegistro { get; set; }
-
-        // Atributos reales extraídos de tu modelo Clientes
         [BindProperty] public string? Direccion { get; set; }
         [BindProperty] public string? Telefono { get; set; }
         [BindProperty] public int MetodoPagoFav { get; set; } = 1;
-
-        // Atributos reales extraídos de tu modelo Repartidores
         [BindProperty] public int VehiculoId { get; set; } = 1;
         [BindProperty] public int ZonaId { get; set; } = 1;
 
@@ -159,7 +155,6 @@ namespace asp_domicilios_presentacion.Pages
                 return;
             }
 
-            // Cambiamos de estado para exigir los datos dinámicos en la pantalla
             Registrando = false;
             CompletandoDatos = true;
         }
@@ -201,7 +196,6 @@ namespace asp_domicilios_presentacion.Pages
                 }
                 else if (TipoRegistro == "Repartidor")
                 {
-                    // Instanciamos el objeto hijo directo del repartidor
                     Repartidores nuevoRepartidor = new Repartidores()
                     {
                         Id = 0,
@@ -213,17 +207,14 @@ namespace asp_domicilios_presentacion.Pages
                         Activo = true,
                         FechaNacimiento = this.FechaNacimiento,
 
-                        // --- Datos específicos de Repartidores ---
                         VehiculoId = this.VehiculoId,
                         ZonaId = this.ZonaId,
                         Disponible = true,
                         CalificacionPromedio = 0.0m,
                     };
 
-                    // Un solo guardado para el repartidor completo
                     _repartidoresPresentacion.GuardarAsync(nuevoRepartidor).GetAwaiter().GetResult();
 
-                    // Login automático para el repartidor
                     HttpContext.Session.SetInt32("IdUsuario", nuevoRepartidor.Id);
                     HttpContext.Session.SetString("Usuario", nuevoRepartidor.Email!);
                     HttpContext.Session.SetInt32("Rol", nuevoRepartidor.Rol);

@@ -64,7 +64,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
             Borrando = false;
         }
 
-        // PASO 1 EDICIÓN: Sube los datos seleccionados de la tabla al formulario
         public void OnPostBtEditar(int id)
         {
             try
@@ -86,7 +85,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
             }
         }
 
-        // PASO 2 EDICIÓN: Guarda los cambios reales en la Base de Datos
         public void OnPostBtModificar()
         {
             try
@@ -100,7 +98,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
                 if (CategoriaNueva != null && CategoriaNueva.Id > 0)
                 {
-                    // Forzar protección de smalldatetime si la fecha viene corrupta o vacía
                     if (CategoriaNueva.Creacion < new DateTime(1900, 1, 1))
                     {
                         CategoriaNueva.Creacion = DateTime.Now;
@@ -131,7 +128,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
                 if (CategoriaNueva == null) return;
 
-                // Inicializaciones obligatorias de negocio
                 CategoriaNueva.Id = 0;
                 CategoriaNueva.Creacion = DateTime.Now;
                 CategoriaNueva.Activo = true;
@@ -146,7 +142,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
             }
         }
 
-        // PASO 1 BORRAR: Sube los datos al formulario para advertir de la eliminación
         public void OnPostBtBorrarVal(int data)
         {
             try

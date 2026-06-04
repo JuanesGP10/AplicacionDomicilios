@@ -16,7 +16,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
         public ClientesModel()
         {
-            // Inicialización manual directa sin inyección de dependencias
             _clientesPresentacion = new ClientesPresentacion();
         }
 
@@ -27,7 +26,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
         public void OnGet()
         {
-            // Candado global de autenticación
             var variable_session = HttpContext.Session.GetString("Usuario");
             if (String.IsNullOrEmpty(variable_session))
             {
@@ -103,7 +101,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
                 if (Cliente == null) return;
 
-                // Método unificado: Guarda (Insert/Update) según el ID
                 Cliente = _clientesPresentacion.GuardarAsync(Cliente).GetAwaiter().GetResult();
 
                 OnPostBtRefrescar();

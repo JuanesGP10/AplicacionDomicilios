@@ -16,7 +16,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
         public RepartidoresModel()
         {
-            // Inicialización manual directa sin inyección de dependencias
             _repartidoresPresentacion = new RepartidoresPresentacion();
         }
 
@@ -27,7 +26,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
         public void OnGet()
         {
-            // Candado global de autenticación
             var variable_session = HttpContext.Session.GetString("Usuario");
             if (String.IsNullOrEmpty(variable_session))
             {
@@ -104,7 +102,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
                 if (Repartidor == null) return;
 
-                // Método unificado: Guarda (Insert/Update) según el ID
                 Repartidor = _repartidoresPresentacion.GuardarAsync(Repartidor).GetAwaiter().GetResult();
 
                 OnPostBtRefrescar();

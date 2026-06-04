@@ -60,7 +60,7 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
                 return;
             }
 
-            EstadoPagoNuevo = new EstadoPago { Activo = true }; // Por defecto activo
+            EstadoPagoNuevo = new EstadoPago { Activo = true }; 
             Borrando = false;
         }
 
@@ -99,7 +99,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
                 if (EstadoPagoNuevo == null) return;
 
-                // BLINDAJE: Limpieza de la propiedad de navegación mapeada en tu modelo para EF Core
                 EstadoPagoNuevo.Pagos = null;
 
                 if (EstadoPagoNuevo.Id == 0)

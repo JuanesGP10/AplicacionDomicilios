@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Asp_domicilios_negocio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+567016dcad7b0684ecbf7361180dab2722df4f2c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ae9c63f5d67f0dc8680afb966a5ee1790e2015c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Asp_domicilios_negocio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Asp_domicilios_negocio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

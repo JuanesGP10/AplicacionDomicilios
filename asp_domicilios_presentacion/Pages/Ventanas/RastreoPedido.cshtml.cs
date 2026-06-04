@@ -16,7 +16,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
         public RastreoPedidoModel()
         {
-            // Instancia de tu capa de presentación de rastreos
             _rastreoPresentacion = new RastreoPedidoPresentacion();
         }
 
@@ -48,16 +47,13 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
             {
                 if (_rastreoPresentacion == null) return;
 
-                // 1. Traemos todos los rastreos (aquí x._PedidoId viene nulo, pero x.PedidoId entero sí tiene valor)
                 var todosLosRastreos = _rastreoPresentacion.ConsultarAsync().GetAwaiter().GetResult() ?? new List<RastreoPedido>();
 
                 int rol = ObtenerRolUsuario();
                 int usuarioId = ObtenerIdUsuario();
 
-                // 2. CONTROL DE ROLES CONTROLADO POR ENTEROS DIRECTOS
                 if (rol == 1)
                 {
-                    // Admin: Ve todo sin restricciones
                     Lista = todosLosRastreos;
                 }
                 else if (rol == 2)

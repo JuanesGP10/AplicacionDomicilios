@@ -8,7 +8,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 {
     public class PerfilModel : PageModel
     {
-        // 1. Capas de Presentación / Servicios
         private readonly UsuariosPresentacion _usuariosPresentacion;
         private readonly ClientesPresentacion _clientesPresentacion;
         private readonly RepartidoresPresentacion _repartidoresPresentacion;
@@ -16,7 +15,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
         private readonly VehiculosPresentacion _vehiculosPresentacion;
         private readonly ZonasPresentacion _zonasPresentacion;
 
-        // 2. Propiedades enlazadas para el Front-End
         [BindProperty]
         public Usuarios UsuarioBase { get; set; } = new Usuarios();
 
@@ -26,7 +24,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
         [BindProperty]
         public Repartidores? DatosRepartidor { get; set; }
 
-        // 3. Listas para los menús desplegables (<select>)
         public List<MetodoPago> ListaMetodosPago { get; set; } = new List<MetodoPago>();
         public List<Vehiculos> ListaVehiculos { get; set; } = new List<Vehiculos>();
         public List<Zonas> ListaZonas { get; set; } = new List<Zonas>();
@@ -43,7 +40,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
             _zonasPresentacion = new ZonasPresentacion();
         }
 
-        // 📥 CARGAR EL PERFIL DE ACUERDO AL ROL EN SESIÓN
         public void OnGet()
         {
             var variable_session = HttpContext.Session.GetString("Usuario");
@@ -89,7 +85,7 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
                         ViewData["Exito"] = "¡Tus datos de perfil y preferencias de cliente se han actualizado con éxito!";
                     }
                 }
-                else if (RolIdActual == 3) // 🛵 CONTROL DE ROL: REPARTIDOR
+                else if (RolIdActual == 3) 
                 {
                     var todosRepartidores = _repartidoresPresentacion.ConsultarAsync().GetAwaiter().GetResult() ?? new List<Repartidores>();
                     var repartidorBD = todosRepartidores.FirstOrDefault(r => r.Id == idLogueado);
@@ -115,7 +111,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
                     if (usuarioBD != null)
                     {
-                        // Mapeo de atributos directos de la clase base (Usuarios.cs)
                         usuarioBD.Nombre = UsuarioBase.Nombre;
                         usuarioBD.Email = UsuarioBase.Email;
                         usuarioBD.Cedula = UsuarioBase.Cedula;
@@ -130,29 +125,25 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
                 ViewData["Mensaje"] = "Error crítico al intentar procesar los cambios: " + ex.Message;
             }
 
-            // Recargar catálogos y datos limpios tras el submit
             CargarPerfilPorRol();
             return Page();
         }
 
-        // 🧠 LÓGICA INTERNA DE CARGA INDEPENDIENTE
         private void CargarPerfilPorRol()
         {
             int idLogueado = ObtenerIdUsuarioLogueado();
             RolIdActual = ObtenerRolUsuario();
 
-            // Cargar siempre el catálogo de Métodos de Pago globales
             ListaMetodosPago = _metodoPagoPresentacion.ConsultarAsync().GetAwaiter().GetResult() ?? new List<MetodoPago>();
 
-            if (RolIdActual == 2) // Cliente
+            if (RolIdActual == 2) 
             {
                 var todosClientes = _clientesPresentacion.ConsultarAsync().GetAwaiter().GetResult() ?? new List<Clientes>();
                 DatosCliente = todosClientes.FirstOrDefault(c => c.Id == idLogueado);
                 UsuarioBase = DatosCliente ?? new Clientes();
             }
-            else if (RolIdActual == 3) // Repartidor
+            else if (RolIdActual == 3) 
             {
-                // Carga específica de catálogos operativos únicamente si es Repartidor
                 ListaVehiculos = _vehiculosPresentacion.ConsultarAsync().GetAwaiter().GetResult() ?? new List<Vehiculos>();
                 ListaZonas = _zonasPresentacion.ConsultarAsync().GetAwaiter().GetResult() ?? new List<Zonas>();
 

@@ -23,7 +23,6 @@
             {
                 foreach (var item in Model.ListaNotificaciones)
                 {
-                    // Determinar estilos visuales basados en si la notificación ya fue leída
                     string claseBorde = item.Leida ? "border-start border-secondary opacity-75" : "border-start border-4 border-warning shadow";
                     string fondoCard = item.Leida ? "bg-light text-muted" : "bg-white text-dark";
                     string iconoCampana = item.Leida ? "bi-bell text-secondary" : "bi-bell-fill text-danger";

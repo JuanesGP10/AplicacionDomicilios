@@ -16,8 +16,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
         [BindProperty] public Pedidos? PedidoNuevo { get; set; }
         [BindProperty] public bool Borrando { get; set; }
-
-        // Propiedades auxiliares para capturar la selección actual del formulario
         [BindProperty] public int IdProductoElegido { get; set; }
         [BindProperty] public int CantidadElegida { get; set; }
 

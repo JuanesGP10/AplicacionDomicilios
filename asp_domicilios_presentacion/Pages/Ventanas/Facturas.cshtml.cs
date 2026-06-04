@@ -86,7 +86,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
             {
                 if (FacturaNueva == null) return Page();
 
-                // 1. Conseguir el pago enlazado para conocer el monto real (Subtotal)
                 var pagoAsociado = _pagosPresentacion.ConsultarPorIdAsync(FacturaNueva.PagoId).GetAwaiter().GetResult();
 
                 if (pagoAsociado == null)
@@ -106,14 +105,13 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
 
                 ViewData["Mensaje"] = "¡Factura generada y calculada con éxito!";
-                return RedirectToPage("./Facturas"); // Redirección limpia para refrescar la grilla
+                return RedirectToPage("./Facturas"); 
             }
             catch (Exception ex)
             {
                 ViewData["Mensaje"] = "Error crítico al generar factura: " + ex.Message;
             }
 
-            // Si algo falla, recargamos la vista de forma segura
             OnPostBtRefrescar();
             return Page();
         }

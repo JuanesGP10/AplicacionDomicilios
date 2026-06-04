@@ -63,39 +63,33 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
                 if (rol == 1)
                 {
-                    // 1. ADMIN: Ve todos los registros sin restricciones
                     Lista = _pagosPresentacion.ConsultarAsync().GetAwaiter().GetResult();
                 }
                 else
                 {
                     var todosLosPagos = _pagosPresentacion.ConsultarAsync().GetAwaiter().GetResult() ?? new List<Pagos>();
 
-                    // ⚡ INSTANCIACIÓN MANUAL: Necesitamos los pedidos para saber a quién le pertenece cada pago
                     var _pedidosPresentacion = new PedidosPresentacion();
                     var todosLosPedidos = _pedidosPresentacion.ConsultarAsync().GetAwaiter().GetResult() ?? new List<Pedidos>();
 
                     if (rol == 2)
                     {
-                        // 2. CLIENTE: Filtramos los pedidos del cliente y sacamos sus IDs
                         var misPedidosIds = todosLosPedidos
                                                 .Where(p => p.ClienteId == usuarioLogueadoId)
                                                 .Select(p => p.Id)
                                                 .ToList();
 
-                        // Traemos los pagos que coincidan con esos números de pedido
                         Lista = todosLosPagos
                                     .Where(p => misPedidosIds.Contains(p.PedidoId))
                                     .ToList();
                     }
                     else if (rol == 3)
                     {
-                        // 3. REPARTIDOR: Filtramos los pedidos asignados al repartidor y sacamos sus IDs
                         var misEntregasIds = todosLosPedidos
                                                 .Where(p => p.RepartidorId == usuarioLogueadoId)
                                                 .Select(p => p.Id)
                                                 .ToList();
 
-                        // Traemos los pagos que coincidan con esos números de pedido
                         Lista = todosLosPagos
                                     .Where(p => misEntregasIds.Contains(p.PedidoId))
                                     .ToList();
@@ -130,7 +124,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
         public void OnPostBtModificar(int data)
         {
-            // 1. Candado de seguridad para modificación
             if (ObtenerRolUsuario() != 1)
             {
                 ViewData["Mensaje"] = "Acceso denegado: No tienes permisos para modificar registros financieros.";
@@ -138,21 +131,17 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
                 return;
             }
 
-            // Refrescamos la lista para asegurarnos de tener los datos frescos en memoria
             OnPostBtRefrescar();
             CargarCatalogos();
 
-            // Buscamos el pago específico que se seleccionó para editar
             PagoNuevo = Lista!.FirstOrDefault(x => x.Id == data);
 
-            // Limpiamos la lista para dar paso visual al formulario de edición
             Lista = null;
             Borrando = false;
         }
 
         public void OnPostBtGuardar()
         {
-            // 1. Candado de seguridad estricto
             if (ObtenerRolUsuario() != 1)
             {
                 ViewData["Mensaje"] = "Acceso denegado: Acción exclusiva de administradores.";
@@ -175,7 +164,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
                     return;
                 }
 
-                // Sumamos el subtotal de cada producto y lo asignamos al Monto
                 PagoNuevo.Monto = itemsDelPedido.Sum(item => item.Subtotal);
             }
             catch (Exception ex)

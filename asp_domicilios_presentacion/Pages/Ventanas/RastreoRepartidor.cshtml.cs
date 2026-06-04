@@ -9,7 +9,7 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
     public class RastreoRepartidorModel : PageModel
     {
         private IRastreoRepartidorPresentacion _rastreoRepartidorPresentacion;
-        private IPedidosPresentacion _pedidosPresentacion; // 👈 Instanciamos Pedidos para hacer el puente
+        private IPedidosPresentacion _pedidosPresentacion; 
 
         [BindProperty] public List<RastreoRepartidor>? Lista { get; set; }
         [BindProperty] public RastreoRepartidor? Rastreo { get; set; }
@@ -17,7 +17,7 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
         public RastreoRepartidorModel()
         {
             _rastreoRepartidorPresentacion = new RastreoRepartidorPresentacion();
-            _pedidosPresentacion = new PedidosPresentacion(); // 👈 Inicialización manual como en tus otros controladores
+            _pedidosPresentacion = new PedidosPresentacion(); 
         }
 
         public int ObtenerRolUsuario() => HttpContext.Session.GetInt32("Rol") ?? 0;
@@ -40,16 +40,13 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
             {
                 if (_rastreoRepartidorPresentacion == null) return;
 
-                // 1. Traemos todas las ubicaciones de los repartidores activos
                 var todosLosRepartidores = _rastreoRepartidorPresentacion.ConsultarAsync().GetAwaiter().GetResult() ?? new List<RastreoRepartidor>();
 
                 int rol = ObtenerRolUsuario();
                 int usuarioId = ObtenerIdUsuario();
 
-                // 2. CONTROL DE ROLES DINÁMICO Y CORREGIDO
                 if (rol == 1)
                 {
-                    // Admin: Ve absolutamente a todos los repartidores
                     Lista = todosLosRepartidores;
                 }
                 else if (rol == 3)

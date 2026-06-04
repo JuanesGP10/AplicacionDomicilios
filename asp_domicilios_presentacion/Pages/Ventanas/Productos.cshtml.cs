@@ -119,7 +119,7 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
             }
             catch (Exception ex)
             {
-                CargarCategorias(); // Recarga el combo para que la vista del formulario no falle
+                CargarCategorias(); 
                 ViewData["Mensaje"] = "Error al guardar el producto: " + ex.Message;
             }
         }

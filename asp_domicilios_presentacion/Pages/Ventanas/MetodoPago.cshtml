@@ -31,7 +31,6 @@
             </div>
         }
 
-        <!-- CONFIRMACIÓN DE ELIMINACIÓN -->
         @if (Model.Borrando && Model.MetodoNuevo != null)
         {
             <div class="card border-danger shadow mb-4">
@@ -49,7 +48,6 @@
             </div>
         }
 
-        <!-- FORMULARIO DE REGISTRO / EDICIÓN -->
         @if (Model.MetodoNuevo != null && !Model.Borrando)
         {
             <div class="card shadow-sm border-0 rounded-3 mb-5">
@@ -96,7 +94,6 @@
             </div>
         }
 
-        <!-- TABLA GENERAL -->
         @if (Model.ListaMetodos != null)
         {
             <div class="card shadow border-0 rounded-3">

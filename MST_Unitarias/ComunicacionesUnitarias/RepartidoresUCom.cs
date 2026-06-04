@@ -55,13 +55,11 @@ namespace MST_Unitarias.ComunicacionesUnitarias
             var resultadoPost = await comunicaciones.Ejecutar(datosPost);
             Assert.IsNotNull(resultadoPost);
 
-            // Deserializamos el resultado para obtener el ID generado
             string jsonObjetoCreado = resultadoPost["valor"].ToString();
             var objetoCreado = JsonConvert.DeserializeObject<Repartidores>(jsonObjetoCreado);
             int IdGenerado = objetoCreado.Id;
             Assert.IsTrue(IdGenerado > 0);
 
-            // 2. PUT: Modificar el repartidor creado
             var datosPut = new Dictionary<string, object>
             {
                 { "Url", $"{urlBase}/modificar" },
@@ -82,7 +80,6 @@ namespace MST_Unitarias.ComunicacionesUnitarias
             };
             await comunicaciones.Ejecutar(datosPut);
 
-            // 3. DELETE: Borrar el repartidor
             var datosDelete = new Dictionary<string, object>
             {
                 { "Url", $"{urlBase}/borrar?id={IdGenerado}" }

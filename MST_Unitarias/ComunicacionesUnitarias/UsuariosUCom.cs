@@ -31,8 +31,6 @@ namespace MST_Unitarias.ComunicacionesUnitarias
         {
             Comunicaciones comunicaciones = new Comunicaciones();
 
-            // 1. POST: Crear un nuevo usuario
-            // Nota: Asegúrate de que el Rol (ej: 1 o 2) exista en tu tabla Roles
             var datosPost = new Dictionary<string, object>
             {
                 { "Url", $"{urlBase}/guardar" },
@@ -43,20 +41,18 @@ namespace MST_Unitarias.ComunicacionesUnitarias
                     Email = "usuario.test@domicilios.com",
                     Contrasena = "Usuario123*",
                     FechaNacimiento = new DateTime(1998, 10, 10),
-                    Rol = 1 // Verifica que este ID de Rol sea válido en tu BD
+                    Rol = 1 
                 } }
             };
 
             var resultadoPost = await comunicaciones.Ejecutar(datosPost);
             Assert.IsNotNull(resultadoPost);
 
-            // Deserializamos para obtener el ID recién generado
             string jsonObjetoCreado = resultadoPost["valor"].ToString();
             var usuarioCreado = JsonConvert.DeserializeObject<Usuarios>(jsonObjetoCreado);
             int IdGenerado = usuarioCreado.Id;
             Assert.IsTrue(IdGenerado > 0);
 
-            // 2. PUT: Modificar el usuario creado
             var datosPut = new Dictionary<string, object>
             {
                 { "Url", $"{urlBase}/modificar" },
@@ -72,7 +68,6 @@ namespace MST_Unitarias.ComunicacionesUnitarias
             };
             await comunicaciones.Ejecutar(datosPut);
 
-            // 3. DELETE: Borrar el usuario
             var datosDelete = new Dictionary<string, object>
             {
                 { "Url", $"{urlBase}/borrar?id={IdGenerado}" }

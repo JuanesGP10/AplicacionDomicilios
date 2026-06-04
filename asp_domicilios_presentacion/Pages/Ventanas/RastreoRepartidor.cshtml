@@ -113,7 +113,6 @@
                         string lat = Model.Rastreo.Latitud.ToString(System.Globalization.CultureInfo.InvariantCulture);
                         string lng = Model.Rastreo.Longitud.ToString(System.Globalization.CultureInfo.InvariantCulture);
 
-                        // Construimos la URL de incrustación (Embed) de Google Maps apuntando a las coordenadas
                         string urlMapa = $"https://maps.google.com/maps?q={lat},{lng}&z=16&output=embed";
 
                         <iframe src="@urlMapa"

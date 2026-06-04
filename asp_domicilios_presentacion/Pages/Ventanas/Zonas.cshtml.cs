@@ -75,13 +75,10 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
                     return;
                 }
 
-                // 1. Primero refrescamos/cargamos la lista desde la base de datos
                 OnPostBtRefrescar();
 
-                // 2. Buscamos el registro que el usuario quiere editar usando el 'id'
                 Zona = Lista!.FirstOrDefault(x => x.Id == id);
 
-                // Mantener la lista y no ponerla en null para que la tabla no desaparezca al editar
                 Borrando = false;
             }
             catch (Exception ex)
@@ -90,7 +87,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
             }
         }
 
-        // AJUSTADO: Este método ahora sí guarda los cambios editados en el formulario hacia la Base de Datos
         public void OnPostBtModificar()
         {
             try
@@ -104,12 +100,10 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
                 if (Zona != null && Zona.Id > 0)
                 {
-                    // Invocamos la actualización real en tu base de datos de manera síncrona
                     var resultado = _zonasPresentacion.ModificarAsync(Zona).GetAwaiter().GetResult();
                     ViewData["Exito"] = "Zona modificada con éxito.";
                 }
 
-                // Refrescamos la lista completa y cerramos el formulario de edición
                 OnPostBtRefrescar();
             }
             catch (Exception ex)

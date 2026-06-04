@@ -17,7 +17,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
         public UsuariosModel()
         {
-            // Inicialización manual directa sin inyección de dependencias
             _usuariosPresentacion = new UsuariosPresentacion();
         }
 
@@ -28,7 +27,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
         public void OnGet()
         {
-            // Candado global de autenticación
             var variable_session = HttpContext.Session.GetString("Usuario");
             if (String.IsNullOrEmpty(variable_session))
             {
@@ -64,7 +62,7 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
             Usuario = new Usuarios()
             {
-                Rol = 2, // Cliente por defecto al crear uno nuevo
+                Rol = 2, 
                 FechaNacimiento = DateTime.Today
             };
             Borrando = false;
@@ -105,7 +103,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
 
                 if (Usuario == null) return;
 
-                // Método unificado: Guarda (Insert/Update) según el ID
                 Usuario = _usuariosPresentacion.GuardarAsync(Usuario).GetAwaiter().GetResult();
 
                 OnPostBtRefrescar();
@@ -170,23 +167,19 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
                 return Page();
             }
 
-            // 2. Construir el documento Excel en memoria con ClosedXML
             using (var workbook = new XLWorkbook())
             {
                 var worksheet = workbook.Worksheets.Add("Reporte de Usuarios");
 
-                // --- ESTILOS DE LA PALETA (Azul Marino Profesional) ---
                 var colorHeaderBg = XLColor.FromHtml("#1B365D");
                 var colorZebraBg = XLColor.FromHtml("#F2F5F9");
 
-                // Título Principal del Reporte
                 worksheet.Cell("A1").Value = "REPORTE GENERAL DE USUARIOS DEL SISTEMA";
                 worksheet.Cell("A1").Style.Font.Bold = true;
                 worksheet.Cell("A1").Style.Font.FontSize = 16;
                 worksheet.Cell("A1").Style.Font.FontColor = colorHeaderBg;
                 worksheet.Row(1).Height = 28;
 
-                // 3. Encabezados de la Tabla
                 string[] encabezados = { "ID", "Cédula", "Nombre Completo", "Correo Electrónico", "Fecha Nacimiento", "Rol ID", "Tipo de Cuenta" };
                 worksheet.Row(3).Height = 24;
 
@@ -202,7 +195,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
                     celdaHeader.Style.Border.OutsideBorder = XLBorderStyleValues.Thin;
                 }
 
-                // 4. Inyección Dinámica de Datos del Sistema
                 int filaInicio = 4;
                 foreach (var user in listaUsuarios)
                 {
@@ -215,16 +207,13 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
                     worksheet.Cell(filaInicio, 5).Value = user.FechaNacimiento.ToString("dd/MM/yyyy");
                     worksheet.Cell(filaInicio, 6).Value = user.Rol;
 
-                    // Conversión textual amigable del rol numérico
                     worksheet.Cell(filaInicio, 7).Value = user.Rol == 1 ? "Administrador" : user.Rol == 2 ? "Cliente" : "Repartidor";
 
-                    // Formatos y alineaciones de datos
                     worksheet.Cell(filaInicio, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                     worksheet.Cell(filaInicio, 2).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                     worksheet.Cell(filaInicio, 5).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
                     worksheet.Cell(filaInicio, 6).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
 
-                    // Aplicación de bordes delgados y filas intercaladas (Zebra striping)
                     for (int c = 1; c <= encabezados.Length; c++)
                     {
                         worksheet.Cell(filaInicio, c).Style.Border.OutsideBorder = XLBorderStyleValues.Thin;
@@ -237,7 +226,6 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
                     filaInicio++;
                 }
 
-                // 5. Agregar Fila de Totales al final
                 worksheet.Row(filaInicio).Height = 22;
                 worksheet.Cell(filaInicio, 2).Value = "Total Registrados:";
                 worksheet.Cell(filaInicio, 2).Style.Font.Bold = true;

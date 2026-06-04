@@ -45,12 +45,11 @@ namespace MST_Unitarias.ComunicacionesUnitarias
             Assert.IsTrue(resultadoPost.ContainsKey("valor"), "El guardar no retornó la clave 'valor'.");
 
             string jsonObjetoCreado = resultadoPost["valor"].ToString();
-            var objetoCreado = JsonConvert.DeserializeObject<Calificaciones>(jsonObjetoCreado); // Mapeo a Calificaciones
+            var objetoCreado = JsonConvert.DeserializeObject<Calificaciones>(jsonObjetoCreado); 
             int IdGenerado = objetoCreado.Id;
 
             Assert.IsTrue(IdGenerado > 0, "La base de datos no generó un ID válido para la prueba.");
 
-            // 2. PUT (Modificar)
             var datosPut = new Dictionary<string, object>
             {
                 { "Url", $"{urlBase}/modificar" },
@@ -58,7 +57,6 @@ namespace MST_Unitarias.ComunicacionesUnitarias
             };
             await comunicaciones.Ejecutar(datosPut);
 
-            // 3. DELETE (Borrar por QueryString)
             var datosDelete = new Dictionary<string, object>
             {
                 { "Url", $"{urlBase}/borrar?id={IdGenerado}" }

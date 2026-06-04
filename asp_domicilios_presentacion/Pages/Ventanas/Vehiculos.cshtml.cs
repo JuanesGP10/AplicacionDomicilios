@@ -60,7 +60,7 @@ namespace asp_domicilios_presentacion.Pages.Ventanas
                 return;
             }
 
-            Vehiculo = new Vehiculos() { Activo = true }; // Activo por defecto al ser nuevo
+            Vehiculo = new Vehiculos() { Activo = true }; 
             Borrando = false;
         }
 
